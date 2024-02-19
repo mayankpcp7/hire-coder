@@ -1897,7 +1897,7 @@
       </header>
   
       <!-- meetup -->
-      <!-- <section class="bg_meetup py-[109px]">
+       <section class="bg_meetup py-[70px] sm:py-[109px]  mt-[-50px]">
         <div class="max-w-[1140px] mx-auto px-4 xl:px-0">
           <h2
             class="text-headingcolor mx-auto font-outfit max-w-[285px] leading-[116%] sm:max-w-[523px] font-semibold text-center text-[28px] md:text-[40px] xl:text-xl"
@@ -1905,104 +1905,70 @@
             Meet top coder ready to
             <span class="text-lightgreen">Chat and hire</span>
           </h2>
-          <div class="flex flex-wrap">
-            <div class="w-6/12">
-               <button
-                class="video-btn flex items-center text-start justify-start mt-6"
-                onclick="openvideo('video1')"
-              >
-              
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openvideo('video2')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/Logo.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    class="font-inter font-semibold active:text-lightgreen text-primaryblack sm:text-[28px] text-md"
-                  >
-                    Hire Expert coder
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
-                  >
-                    Assign Project & Tasks for your project.
-                  </p>
-                </div>
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openvideo('video3')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/qualioty.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    class="font-inter active:text-lightgreen font-semibold text-primaryblack text-md sm:text-lg"
-                  >
-                    Get quality work done
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
-                  >
-                    Scrum & Project Delivery Managed by Us
-                  </p>
-                </div>
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openvideo('video4')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/paywhen.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    id="textgreen"
-                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-md sm:text-lg"
-                  >
-                    Pay when you’re satisfied
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[351px] opacity-60"
-                  >
-                    Pay Only when task is done as Scrum Managed by Us.
-                  </p>
-                </div>
-              </button>
-            </div>
-            <div class="w-full mt-11 lg:mt-0 lg:w-6/12">
-              <div id="video1" class="video-content relative">
-               <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
-               <button id="playPauseButton" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-    Play
-  </button>
-              </div>
-              <div id="video2" class="video-content relative hidden">
-                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
-              </div>
-              <div id="video3" class="video-content relative hidden">
-                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
-              </div>
-              <div id="video4" class="video-content relative hidden">
-                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
-              </div>
-            </div>
-             
-            </div>
+          <div class="flex flex-wrap flex-row mt-12 pt-1 ">
+<div class="md:w-7/12 w-full">
+  <span class="relative"id="mainVideoContainer"> 
+    <img class="max-w-[50px] cursor-pointer z-10 absolute top-[45%] translate-x-[-50%] translate-y-[-50%] right-[45%]" src="./assets/images/png/playbtn.png" alt="playbtn">
+  <video id="mainVideo" width="659px" height="359px" poster="./assets/images/png/Video.png"  src="./assets/video/aboutvideo.mp4"></video></span>
+  <h4 class="font-inter font-semibold text-lg pt-4 leading-[130%]">Courtney Henry</h4>
+  <p class="pt-1 font-inter text-headingblack">Java Developer</p>
+  <img class="mt-2" src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="mt-4 font-inter text-black opacity-70 text-base leading-[160%] max-w-[659px]">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique. Proin feugiat aenean pulvinar eget nulla sagittis in. Nisi viverra fames quis consequat nullam”</p>
+</div>
+<div class="md:w-5/12 w-full md:ps-5">
+  <div class="swiper-container pt-10"> 
+  <div class="flex md:block swiper-wrapper">
+    <div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col p-[10px] sm:py-3 sm:px-2 border border-solid rounded-[12px] bg-white">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/elinarpooma.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Eleanor Pena</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">JavaScript Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div> </div>
+<div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col py-3 px-2 border border-solid rounded-[12px] bg-white mt-2">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/Devone.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Devon Lane</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">Java Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div>
+</div>
+<div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col py-3 px-2 border border-solid rounded-[12px] bg-white mt-2">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/Ralph.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Eleanor Pena</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">JavaScript Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div>
+
           </div>
+        
         </div>
-      </section> -->
+      </section>
+      <div class="swiper-wrapper">
+<div class="swiper-slide">
+  <div>
+    <video width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
+  </div>
+</div>
       <!-- Teams -->
       <section class="bg-[#F4F4F4] py-[53px] sm:py-[85px] relative">
         <img
@@ -3388,9 +3354,14 @@
         ],
       });
     </script>
-    <!-- logos slider -->
-    <script>
-
-    </script>
+    <!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+  
+  });
+</script>
   </body>
 </html>

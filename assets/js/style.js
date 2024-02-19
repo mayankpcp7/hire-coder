@@ -47,20 +47,10 @@ function openvideo(videoName) {
   // Show the selected tab content
   document.getElementById(videoName).style.display = "block";
 }
+// meetup dynamic videos
 // meet up main video
-const playPauseButton = document.getElementById("playPauseButton");
-const videoPlayer = document.getElementById("videoPlayer");
-
-let isPlaying = false;
-
-playPauseButton.addEventListener("click", function () {
-  if (isPlaying) {
-    videoPlayer.pause();
-    playPauseButton.textContent = "Play";
-  } else {
-    videoPlayer.play();
-    playPauseButton.textContent = "Pause";
-  }
-
-  isPlaying = !isPlaying;
-});
+function showImage(imageSrc) {
+  var mainVideo = document.getElementById("mainVideo");
+  mainVideo.src = imageSrc;
+  mainVideo.style.display = "block";
+}
