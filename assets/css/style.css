@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.bg_header {
+  background-image: url(../images/webp/Home.webp);
+}
+.bg_meetup {
+  background: url(../images/png/section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg_footer {
+  background-image: url(../images/webp/footer.webp);
+}
+.social_icons:hover g path {
+  fill: #fff;
+}
+.social_icons:hover g rect {
+  stroke: #fff;
+}
+.block {
+  display: block;
+}
+.social_icons path {
+  transition: 300ms;
+}
+.headercard {
+  box-shadow: 0px 1px 37px 0px #00000026;
+}
+.slick-slide {
+  margin-right: 6px !important;
+  margin-left: 6px !important;
+}
+#logos.slick-slide {
+  padding-left: 16px !important;
+  padding-left: 16px !important;
+}
+.slick-track {
+  display: flex !important;
+  padding-right: 40px !important;
+  justify-content: space-between !important;
+}
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+  margin-bottom: 50px;
+}
+.display_block {
+  display: block !important;
+}
+.slick-slide > div {
+  display: flex;
+}
+
+.teamcard {
+  box-shadow: 0px 9px 24px 5px #0000000d;
+}
+.experiencecard:hover .view {
+  transform: translatex(45%);
+}
+.experiencecard:hover .viewcoder {
+  color: #14a800;
+}
+@media (max-width: 375px) {
+  .bg_header {
+    background-image: url(../images/webp/hedader-sm.webp);
+  }
+  .main {
+    padding-top: 220px !important;
+  }
+}

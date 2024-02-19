@@ -1,0 +1,3396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hire Coder</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/png/favicon.ico"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- slick min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- js -->
+    <script src="./assets/js/style.js"></script>
+    <!-- config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightgreen: "#14A800",
+              headingcolor: "#111111",
+              primaryblack: "#131313",
+              white: "#ffff",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+              inter: ["Inter"],
+              outfit: ["Outfit"],
+            },
+            fontSize: {
+              xl: "48px",
+              lg: "24px",
+              md: "20px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="overflow-x-hidden">
+      <header id="header"
+        class="bg_header bg-no-repeat sm:bg-center xxl:h-screen overflow-x-hidden min-h-screen bg-cover relative z-1"
+      >
+        <div class="max-w-[1140px] sm:px-4 mx-auto xl:px-0 z-0">
+          <nav class="flex justify-between pt-[6px] relative z-1">
+            <img
+              class="max-w-[82px]  cursor-pointer mx-4 sm:max-w-[125.71px]"
+              src="./assets/images/png/Hirecoder-Headerlogo 1.png"
+              alt="navlogo"
+            />
+            <ul class="sm:flex items-center gap-6 hidden">
+              <li class="relative">
+                <a
+                  class="text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[3px] w-0 transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white text-base font-inter font-semibold"
+                  href="#jobs"
+                  >Jobs</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  class="text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[3px] w-0 transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white text-base font-inter font-semibold"
+                  href="#jobs"
+                  >Coders</a
+                >
+              </li>
+              <button
+                class="w-[102px] font-semibold font-inter text-base h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
+              >
+                Sign In
+              </button>
+            </ul>
+           
+
+            <button onclick="navopen()" class="sm:hidden absolute top-0 end-0 mt-4 me-4 block">
+              <img
+                class="max-w-[24px]"
+                src="./assets/images/png/akar-icons_three-line-horizontal.png"
+                alt="navopen"
+              />
+            </button>
+            
+             <ul class="sm:hidden flex transition-all duration-300 justify-center mt-[-6px] flex-col w-full items-center bg-[#125c15] min-h-screen items-center z-[20] absolute end-[-100%]  mobilenav gap-6">
+              <li class="relative">
+                <a onclick="closenav()"
+                  class="text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[3px] w-0 transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white text-md font-inter font-semibold"
+                  href="#jobs"
+                  >Jobs</a
+                >
+              </li>
+              <li class="relative">
+                <a onclick="closenav()"
+                  class="text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[3px] w-0 transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white text-md font-inter font-semibold"
+                  href="#jobs"
+                  >Coders</a
+                >
+              </li>
+              <button onclick="closenav()"
+                class="w-[102px] font-inter font-semibold text-md h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
+              >
+                Sign In
+              </button>
+              <button class="top-[2%] end-[2%] absolute sm:hidden" onclick="closenav()">
+              <span class="bg-white flex h-[2px] w-[24px] mt-[2px] me-1 rotate-[-45deg]"></span>
+              <span class="bg-white flex h-[2px] w-[24px] rotate-[45deg]"></span>
+            </button>
+            </ul>
+          </nav>
+          <main class="pt-9 px-4 sm:px-0 sm:pt-14 max-w-[679px]">
+            <p
+              class="text-start font-inter font-normal text-white leading-[195%] sm:text-[24px]"
+            >
+              Coder on demand
+            </p>
+            <h1
+              class="text-start font-outfit font-semibold text-[32px] sm:text-[40px] md:text-[48px]  leading-[116%] text-white"
+            >
+              Video Chat And Hire Top 1% Remote Coder Same Day
+            </h1>
+          </main>
+          <div class="pt-[100px] sm:pt-[106px] main">
+            <div class="flex px-4  sm:px-0 flex-wrap gap-[10px] items-center">
+              <button  onclick="headeropenTab('headertab1')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] w-[121px] sm:h-[33px] sm:w-[135px]"
+              >
+                Website Design
+              </button>
+              <button  onclick="headeropenTab('headertab2')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[95px] sm:w-[106px]"
+              >
+                Java Script
+              </button>
+              <button onclick="headeropenTab('headertab3')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[90px] sm:w-[100px]"
+              >
+                UI Design
+              </button>
+              <button onclick="headeropenTab('headertab4')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[67px] sm:w-[72px]"
+              >
+                HTML
+              </button>
+              <button onclick="headeropenTab('headertab5')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[88px] sm:w-[97px]"
+              >
+                Bootstrap
+              </button>
+              <button onclick="headeropenTab('headertab6')"
+                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[57px] sm:w-[61px]"
+              >
+                CSS
+              </button>
+            </div>
+            </div>
+          <div class="max-w-[1180px] ms-4 sm:ms-0"> 
+            <div
+              id="headertab1" class="flex headertab-content w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+            </div>
+            <div id="headertab2"
+              class="flex w-full items-center headertab-content hidden justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+         
+            </div>
+            <div id="headertab3"
+              class="flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+            </div>
+            <div  id="headertab4"
+              class="flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+           
+            </div>
+            <div id="headertab5"
+              class="flex headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+            </div>
+            <div id="headertab6"
+              class="flex headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            >
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[41px]"
+                  >
+                    CSS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic4.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Wade Warren
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[49px]"
+                  >
+                    HTML
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[67px]"
+                  >
+                    Bootstrap
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/webp/tabpic1.webp"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Courtney henry
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[43px]"
+                  >
+                    Java
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[32px]"
+                  >
+                    JS
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[58px]"
+                  >
+                    Nuxt JS
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div id="logos" class="max-w-[1140px] mx-auto px-4 xl:px-0"> 
+        <div class="flex items-center logoslider justify-between">
+<img class="cursor-pointer mx-4 max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo">
+<img class="cursor-pointer mx-4 max-w-[107px] sm:max-w-[159px]" src="./assets/images/png/kenzan.png" alt="logo">
+<img class="cursor-pointer mx-4 sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/actualize.png" alt="logo">
+<img class="cursor-pointer mx-4 sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/demandforce.png" alt="logo">
+<img class="cursor-pointer mx-4 max-w-[94px]" src="./assets/images/png/paypal.png" alt="logo">
+<img class="cursor-pointer mx-4 max-w-[53px]" src="./assets/images/png/sales.png" alt="logo">
+<img class="cursor-pointer mx-4 max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo">
+
+        </div>
+        </div>
+      </header>
+  
+      <!-- meetup -->
+      <!-- <section class="bg_meetup py-[109px]">
+        <div class="max-w-[1140px] mx-auto px-4 xl:px-0">
+          <h2
+            class="text-headingcolor mx-auto font-outfit max-w-[285px] leading-[116%] sm:max-w-[523px] font-semibold text-center text-[28px] md:text-[40px] xl:text-xl"
+          >
+            Meet top coder ready to
+            <span class="text-lightgreen">Chat and hire</span>
+          </h2>
+          <div class="flex flex-wrap">
+            <div class="w-6/12">
+               <button
+                class="video-btn flex items-center text-start justify-start mt-6"
+                onclick="openvideo('video1')"
+              >
+              
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openvideo('video2')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/Logo.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    class="font-inter font-semibold active:text-lightgreen text-primaryblack sm:text-[28px] text-md"
+                  >
+                    Hire Expert coder
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
+                  >
+                    Assign Project & Tasks for your project.
+                  </p>
+                </div>
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openvideo('video3')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/qualioty.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    class="font-inter active:text-lightgreen font-semibold text-primaryblack text-md sm:text-lg"
+                  >
+                    Get quality work done
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
+                  >
+                    Scrum & Project Delivery Managed by Us
+                  </p>
+                </div>
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openvideo('video4')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/paywhen.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    id="textgreen"
+                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-md sm:text-lg"
+                  >
+                    Pay when you’re satisfied
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[351px] opacity-60"
+                  >
+                    Pay Only when task is done as Scrum Managed by Us.
+                  </p>
+                </div>
+              </button>
+            </div>
+            <div class="w-full mt-11 lg:mt-0 lg:w-6/12">
+              <div id="video1" class="video-content relative">
+               <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
+               <button id="playPauseButton" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    Play
+  </button>
+              </div>
+              <div id="video2" class="video-content relative hidden">
+                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
+              </div>
+              <div id="video3" class="video-content relative hidden">
+                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
+              </div>
+              <div id="video4" class="video-content relative hidden">
+                <video controls poster="./assets/images/png/Video.png" id="videoPlayer" src="./assets/video/aboutvideo.mp4"></video>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Teams -->
+      <section class="bg-[#F4F4F4] py-[53px] sm:py-[85px] relative">
+        <img
+          class="absolute top-[20%] sm:hidden end-0"
+          src="./assets/images/png/vec69.png"
+          alt="bluevec"
+        />
+        <img
+          class="end-0 lg:block hidden bottom-0 absolute"
+          src="./assets/images/png/Vector 68.png"
+          alt="lines vec"
+        />
+        <div class="max-w-[1140px] mx-auto px-3 xl:px-0">
+          <div class="flex flex-row flex-wrap">
+            <div class="lg:w-6/12">
+              <h2
+                class="text-[28px] max-w-[250px] sm:text-[40px] lg:text-xl font-outfit font-semibold mx-auto text-center lg:mx-0 lg:text-start sm:max-w-[454px] leading-[116%] text-headingcolor"
+              >
+                Build Amazing
+                <span class="text-lightgreen">Teams, On Demand </span>
+              </h2>
+              <p
+                class="lg:pt-6 pt-4 pb-6 lg:pb-0 text-headingcolor font-inter font-normal text-base opacity-60 max-w-[279px] text-center lg:text-start mx-auto lg:mx-0 sm:max-w-[508px]"
+              >
+                Quis diam fames justo ultricies enim. Et et donec sit eu sed
+                enim sed commodo pellentesque.
+              </p>
+              <div
+                class="flex lg:hidden items-center sm:mt-10 justify-center relative z-1"
+              >
+                <div class="flex flex-col item-center">
+                  <div
+                    class="flex ms-8 sm:ms-[66px] max-w-[165px] sm:max-w-full flex-col bg-white teamcard rounded-[15px]"
+                  >
+                    <img
+                      class="sm:max-w-[269px] max-w-[165px] rounded-t-[15px]"
+                      src="./assets/images/png/Rectangle 25(2).png"
+                      alt="marvin"
+                    />
+                    <h3
+                      class="text-xs sm:text-md font-inter font-semibold leading-[120%] ps-2 sm:ps-4 sm:pt-4 pt-2"
+                    >
+                      Marvin McKinney
+                    </h3>
+                    <div class="flex items-center ps-2 sm:ps-4 pt-1 sm:pt-2">
+                      <img
+                        class="me-2 sm:me-3"
+                        src="./assets/images/svg/icon.svg"
+                        alt="calender"
+                      />
+                      <p
+                        class="font-inter font-normal text-[10px] sm:text-base text-headingcolor opacity-60 leading-[150%]"
+                      >
+                        Project Manager
+                      </p>
+                    </div>
+                    <p
+                      class="font-inter font-normal text-[10px] sm:text-xs sm:ps-4 sm:pt-4 pt-3 ps-2 text-headingcolor opacity-60"
+                    >
+                      Previously at
+                    </p>
+                    <img
+                      class="sm:ms-4 ms-2 max-w-[42px] sm:max-w-[84px] mt-1 sm:mt-2 mb-2 sm:mb-4"
+                      src="./assets/images/svg/image 2576.svg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div
+                    class="flex sm:max-w-[269px] max-w-[165px] mt-5 flex-col bg-white me-8 teamcard rounded-[15px]"
+                  >
+                    <img
+                      class="sm:max-w-[269px] max-w-[165px] rounded-t-[15px]"
+                      src="./assets/images/png/Rectangle 25.png"
+                      alt="marvin"
+                    />
+                    <h3
+                      class="text-xs sm:text-md font-inter font-semibold leading-[120%] ps-2 sm:ps-4 sm:pt-4 pt-2"
+                    >
+                      Annette Black
+                    </h3>
+                    <div class="flex items-center ps-2 sm:ps-4 pt-1 sm:pt-2">
+                      <img
+                        class="me-2 sm:me-3"
+                        src="./assets/images/svg/icon.svg"
+                        alt="calender"
+                      />
+                      <p
+                        class="font-inter font-normal text-[10px] sm:text-base text-headingcolor opacity-60 leading-[150%]"
+                      >
+                        Project Manager
+                      </p>
+                    </div>
+                    <p
+                      class="font-inter font-normal text-[10px] sm:text-xs sm:ps-4 sm:pt-4 pt-3 ps-2 text-headingcolor opacity-60"
+                    >
+                      Previously at
+                    </p>
+                    <img
+                      class="ms-2 sm:ms-4 max-w-[42px] sm:max-w-[84px] mt-1 sm:mt-2 mb-2 sm:mb-4"
+                      src="./assets/images/svg/image 2576.svg"
+                      alt="logo"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex relative z-2 ms-[-20px] max-w-[165px] sm:max-w-[269px] mt-[120px] sm:mt-[175px] flex-col bg-white teamcard rounded-[15px]"
+                >
+                  <img
+                    class="sm:max-w-[269px] max-w-[165px] rounded-t-[15px]"
+                    src="./assets/images/png/Rectangle 25(1).png"
+                    alt="marvin"
+                  />
+                  <h3
+                    class="text-xs sm:text-md font-inter font-semibold leading-[120%] ps-2 sm:ps-4 sm:pt-4 pt-2"
+                  >
+                    Jane Cooper
+                  </h3>
+                  <div class="flex items-center ps-2 sm:ps-4 pt-1 sm:pt-2">
+                    <img
+                      class="me-2 sm:me-3"
+                      src="./assets/images/svg/icon.svg"
+                      alt="calender"
+                    />
+                    <p
+                      class="font-inter font-normal text-[10px] sm:text-base text-headingcolor opacity-60 leading-[150%]"
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                  <p
+                    class="font-inter font-normal text-[10px] sm:text-xs sm:ps-4 sm:pt-4 pt-3 ps-2 text-headingcolor opacity-60"
+                  >
+                    Previously at
+                  </p>
+                  <img
+                    class="ms-2 sm:ms-4 max-w-[42px] sm:max-w-[84px] mt-2 mb-2 sm:mb-4"
+                    src="./assets/images/svg/image 2576.svg"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-row justify-center flex-wrap mt-10 pt-1 sm:pt-5"
+              >
+                <div
+                  class="sm:w-6/12 w-10/12 mt-0 sm:mt-8 lg:mt-0 px-2 xl:px-0"
+                >
+                  <img
+                    class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
+                    src="./assets/images/png/Logo.png"
+                    alt="same day"
+                  />
+                  <h3
+                    class="text-primaryblack font-inter font-semibold text-md sm:text-lg pt-3 text-center sm:text-start"
+                  >
+                    Same-Day Hiring
+                  </h3>
+                  <p
+                    class="font-inter font-normal text-headingcolor text-base opacity-60 pt-2 max-w-[255px] text-center mx-auto sm:mx-0 sm:text-start"
+                  >
+                    Hire Top 1% Remote Coders on the same day
+                  </p>
+                </div>
+                <div class="sm:w-6/12 w-10/12 mt-8 lg:mt-0 px-2 xl:px-0">
+                  <img
+                    class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
+                    src="./assets/images/png/Logo(3).png"
+                    alt="same day"
+                  />
+                  <h3
+                    class="text-primaryblack font-inter font-semibold text-md sm:text-lg pt-3 text-center sm:text-start"
+                  >
+                    Satisfaction Guaranteed
+                  </h3>
+                  <p
+                    class="font-inter text-headingcolor font-normal text-base opacity-60 pt-2 max-w-[255px] text-center mx-auto sm:mx-0 sm:text-start"
+                  >
+                    Pay only when satisfied with the task
+                  </p>
+                </div>
+                <div
+                  class="sm:w-6/12 w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10 pt-2"
+                >
+                  <img
+                    class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
+                    src="./assets/images/png/Logo(2).png"
+                    alt="same day"
+                  />
+                  <h3
+                    class="text-primaryblack font-inter font-semibold text-md sm:text-lg pt-3 text-center sm:text-start"
+                  >
+                    Connect via Chat and Video
+                  </h3>
+                  <p
+                    class="font-inter text-headingcolor font-normal text-base opacity-60 pt-2 max-w-[255px] text-center mx-auto sm:mx-0 sm:text-start"
+                  >
+                    Chat and Video call on the same day before awarding project
+                  </p>
+                </div>
+                <div
+                  class="sm:w-6/12 w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10 pt-2"
+                >
+                  <img
+                    class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
+                    src="./assets/images/png/Logo(1).png"
+                    alt="same day"
+                  />
+                  <h3
+                    class="text-primaryblack font-inter font-semibold text-md sm:text-lg pt-3 text-center sm:text-start"
+                  >
+                    Affordable Excellence
+                  </h3>
+                  <p
+                    class="font-inter text-headingcolor font-normal text-base opacity-60 pt-2 max-w-[255px] text-center mx-auto sm:mx-0 sm:text-start"
+                  >
+                    Hire top-tier professionals—without breaking the bank.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-6/12 hidden lg:block">
+              <div
+                class="flex items-center ms-4 relative z-1 scale-75 xl:scale-[100%]"
+              >
+                <div class="flex flex-col item-center">
+                  <div
+                    class="flex ms-[66px] flex-col bg-white teamcard rounded-[15px]"
+                  >
+                    <img
+                      class="max-w-[269px] rounded-t-[15px]"
+                      src="./assets/images/png/Rectangle 25(2).png"
+                      alt="marvin"
+                    />
+                    <h3
+                      class="text-md font-inter font-semibold leading-[120%] ps-4 pt-4"
+                    >
+                      Annette Black
+                    </h3>
+                    <div class="flex items-center ps-4 pt-2">
+                      <img
+                        class="me-3"
+                        src="./assets/images/svg/icon.svg"
+                        alt="calender"
+                      />
+                      <p
+                        class="font-inter font-normal text-base text-headingcolor opacity-60 leading-[150%]"
+                      >
+                        Project Manager
+                      </p>
+                    </div>
+                    <p
+                      class="font-inter font-normal text-xs ps-4 pt-4 text-headingcolor opacity-60"
+                    >
+                      Previously at
+                    </p>
+                    <img
+                      class="ms-4 max-w-[84px] mt-2 mb-4"
+                      src="./assets/images/svg/image 2576.svg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div
+                    class="flex max-w-[269px] mt-5 flex-col bg-white teamcard rounded-[15px]"
+                  >
+                    <img
+                      class="max-w-[269px] rounded-t-[15px]"
+                      src="./assets/images/png/Rectangle 25.png"
+                      alt="marvin"
+                    />
+                    <h3
+                      class="text-md font-inter font-semibold leading-[120%] ps-4 pt-4"
+                    >
+                      Marvin McKinney
+                    </h3>
+                    <div class="flex items-center ps-4 pt-2">
+                      <img
+                        class="me-3"
+                        src="./assets/images/svg/icon.svg"
+                        alt="calender"
+                      />
+                      <p
+                        class="font-inter font-normal text-base text-headingcolor opacity-60 leading-[150%]"
+                      >
+                        Project Manager
+                      </p>
+                    </div>
+                    <p
+                      class="font-inter font-normal text-xs ps-4 pt-4 text-headingcolor opacity-60"
+                    >
+                      Previously at
+                    </p>
+                    <img
+                      class="ms-4 max-w-[84px] mt-2 mb-4"
+                      src="./assets/images/svg/image 2576.svg"
+                      alt="logo"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex relative z-2 ms-[-50px] max-w-[269px] mt-[175px] flex-col bg-white teamcard rounded-[15px]"
+                >
+                  <img
+                    class="max-w-[269px] rounded-t-[15px]"
+                    src="./assets/images/png/Rectangle 25(1).png"
+                    alt="marvin"
+                  />
+                  <h3
+                    class="text-md font-inter font-semibold leading-[120%] ps-4 pt-4"
+                  >
+                    Jane Cooper
+                  </h3>
+                  <div class="flex items-center ps-4 pt-2">
+                    <img
+                      class="me-3"
+                      src="./assets/images/svg/icon.svg"
+                      alt="calender"
+                    />
+                    <p
+                      class="font-inter font-normal text-base text-headingcolor opacity-60 leading-[150%]"
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                  <p
+                    class="font-inter font-normal text-xs ps-4 pt-4 text-headingcolor opacity-60"
+                  >
+                    Previously at
+                  </p>
+                  <img
+                    class="ms-4 max-w-[84px] mt-2 mb-4"
+                    src="./assets/images/svg/image 2576.svg"
+                    alt="logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- total experience -->
+      <section class="bg-white py py-[75px] md:py-[80px] xl:py-[140px]">
+        <div class="max-w-[1140px] mx-auto px-4">
+          <h2
+            class="font-outfit font-semibold leading-[118%] text-[28px] max-w-[258px] sm:max-w-[546px] text-headingcolor text-start sm:text-center md:text-xl max-w-[281px] sm:mx-auto"
+          >
+            Total <span class="text-lightgreen">experience</span> of our coders
+          </h2>
+          <p
+            class="text-start sm:text-center font-inter font-normal text-base leading-[150%] opacity-60 text-headingcolor pt-4 sm:pt-6"
+          >
+            Our coders bring a wealth of experience, knowledge and expertise to
+            every project they undertake.
+          </p>
+          <div class="flex flex-wrap mt-7 sm:mt-9 flex-row mx-[-16px]">
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 mt-7 md:mt-0"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/python.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Python
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Python is a high-level, versatile programming language that has
+                gained immense popularity.
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+             
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 mt-7 md:mt-0"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/mobile.png"
+                  alt="mobile"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Mobile
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Mobile technology has from the early days of basic cell phones
+                to the modern .
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 mt-7 md:mt-0"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/ui.png"
+                  alt="ui"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    UI
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                User Interface (UI) design is a crucial aspect of creating
+                digital products that are
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 mt-7 md:mt-12 lg:mt-0"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/java.png"
+                  alt="java"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Java
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Java is a widely used, versatile, and platform-independent
+                programming
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/database.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Database
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Python is a high-level, versatile programming language that has
+                gained immense popularity.
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/react.png"
+                  alt="react"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    React
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Mobile technology has from the early days of basic cell phones
+                to the modern .
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/nextjs.png"
+                  alt="NextJS"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    NextJS
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                User Interface (UI) design is a crucial aspect of creating
+                digital products that are
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/angular.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Angular
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Java is a widely used, versatile, and platform-independent
+                programming
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/ai.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Ai Services
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Python is a high-level, versatile programming language that has
+                gained immense popularity.
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/mongo.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    MongoDB
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Mobile technology has from the early days of basic cell phones
+                to the modern .
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/sql.png"
+                  alt="python"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    SQL
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                User Interface (UI) design is a crucial aspect of creating
+                digital products that are
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+            <div
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  class="max-w-[45px]"
+                  src="./assets/images/png/backend.png"
+                  alt="backend"
+                />
+                <div class="flex flex-col">
+                  <h3
+                    class="text-headingcolor text-md font-inter leading-[120%] font-semibold font-semibold"
+                  >
+                    Backend
+                  </h3>
+                  <p
+                    class="text-lightgreen font-inter font-bold text-base pt-1 leading-[120%]"
+                  >
+                    45,000 Hrs.
+                  </p>
+                </div>
+              </div>
+              <p
+                class="font-inter pt-3 font-normal text-headingcolor opacity-60 max-w-[322px]"
+              >
+                Java is a widely used, versatile, and platform-independent
+                programming
+              </p>
+              <a href="" target="_blank" class="flex items-center pt-4">
+                <p
+                  class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
+                >
+                  View Coders
+                </p>
+                <img
+                  class="transition-all duration-300 view ms-2"
+                  src="./assets/images/svg/Arrow 3.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+          </div>
+          </div>
+          <button
+            class="font-outfit mt-9 ms-4 font-semibold text-black text-base sm:hidden"
+            onclick="showcards()"
+          >
+            Show More..
+          </button>
+        </div>
+      </section>
+      <!-- How it Works -->
+      <section class="bg-[#F4F4F4] py-[64px] lg:py-[80px] xl:py-[97px]">
+        <div class="max-w-[1140px] px-4 xl:px-0 mx-auto">
+          <div class="flex justify-center flex-wrap flex-row">
+            <div class="w-full lg:w-6/12">
+
+              <h2
+                class="font-outfit sm:text-start text-center font-semibold text-[28px] sm:text-[40px] lg:text-xl text-headingcolor sm:pb-4 lg:pb-8"
+              >
+                How it <span class="text-lightgreen">Works</span>
+              </h2>
+              <div class="relative z-[10]"> 
+                <img class="absolute start-[7%] lg:start-[5%] md:start-[3%] lg:start-[5%] z-[-1]" src="./assets/images/png/how-works-line.png" alt="line">
+              <button
+                class="tab-btn relative z-[10] flex text-start justify-start mt-6"
+                onclick="openTab('tab1')"
+              >
+                <img
+                  class="sm:max-w-[60px] relative z-[3] max-w-[50px]"
+                  src="./assets/images/png/video-interview.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    class="font-inter  font-semibold active:text-lightgreen text-md sm:text-lg"
+                  >
+                    Video interview the experts
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[361px] opacity-60"
+                  >
+                    Live video chat & Hire Top 1% Global coder in a click.
+                  </p>
+                </div>
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openTab('tab2')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/Logo.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-[20px] text-md sm:text-lg"
+                  >
+                    Hire Expert coder
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
+                  >
+                    Assign Project & Tasks for your project.
+                  </p>
+                </div>
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openTab('tab3')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/qualioty.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    class="font-inter active:text-lightgreen font-semibold text-primaryblack text-md sm:text-lg"
+                  >
+                    Get quality work done
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
+                  >
+                    Scrum & Project Delivery Managed by Us
+                  </p>
+                </div>
+              </button>
+              <button
+                class="tab-btn text-start flex mt-6"
+                onclick="openTab('tab4')"
+              >
+                <img
+                  class="sm:max-w-[60px] max-w-[50px]"
+                  src="./assets/images/png/paywhen.png"
+                  alt="video"
+                />
+                <div class="ps-5">
+                  <h4
+                    id="textgreen"
+                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-md sm:text-lg"
+                  >
+                    Pay when you’re satisfied
+                  </h4>
+                  <p
+                    class="text-headingcolor font-inter max-w-[351px] opacity-60"
+                  >
+                    Pay Only when task is done as Scrum Managed by Us.
+                  </p>
+                </div>
+              </button>
+              </div>
+            </div>
+            <div class="w-full mt-11 lg:mt-0 lg:w-6/12">
+              <div id="tab1" class="tab-content">
+                <img
+                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
+                  src="./assets/images/webp/howworks.webp"
+                  alt="howworks"
+                />
+              </div>
+              <div id="tab2" class="tab-content hidden">
+                <img
+                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
+                  src="./assets/images/png/tab2.png"
+                  alt="howworks"
+                />
+              </div>
+              <div id="tab3" class="tab-content hidden">
+                <img
+                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
+                  src="./assets/images/png/tab3.png"
+                  alt="howworks"
+                />
+              </div>
+              <div id="tab4" class="tab-content hidden">
+                <img
+                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
+                  src="./assets/images/png/tab4.png"
+                  alt="howworks"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bg_footer px-4 pt-[51px] sm:pt-[83px] overflow-hidden">
+        <div
+          class="flex lg:gap-5 mx-[-12px] lg:mx-auto xl:gap-0 justify-between flex-row flex-wrap max-w-[1188px] mx-auto xl:px-4 xl:px-0"
+        >
+          <div class="lg:w-3/12 md:w-4/12 sm:w-8/12 w-10/12 px-3">
+            <img
+              class="max-w-[149px] cursor-pointer mx-4"
+              src="./assets/images/png/Hirecoder-Headerlogo 1.png"
+              alt="footer logo"
+            />
+            <p
+              class="text-start text-white opacity-60 pt-4 lg:max-w-[266px] font-inter font-normal leading-[150%]"
+            >
+              We take pride in our team dedicated coders, continuously striving
+              for you excellence in every project.
+            </p>
+          </div>
+          <div class="lg:w-2/12 md:w-4/12 w-6/12 px-3 lg:px-0 pt-8 md:pt-0">
+            <ul class="flex flex-col xl:ps-4">
+              <li
+                class="text-base pb-3 text-white font-inter font-normal leading-[150%]"
+              >
+                Home
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lg:w-2/12 md:w-4/12 w-6/12 px-3 lg:px-0 pt-8 md:pt-0">
+            <ul class="flex flex-col">
+              <li
+                class="text-base pb-3 text-white font-inter font-normal leading-[150%]"
+              >
+                About Us
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Our Team</a
+                >
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-2/12 md:w-4/12 w-6/12 sm:pt-8 lg:pt-0 px-3 pt-8 lg:px-0"
+          >
+            <ul class="flex flex-col">
+              <li
+                class="text-base pb-3 text-white font-inter font-normal leading-[150%]"
+              >
+                Services
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="pb-2">
+                <a
+                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-inter font-normal text-sm leading-[66janec%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-2/12 md:w-4/12 w-6/12 sm:pt-8 lg:pt-0 px-3 pt-8 lg:px-0 pe-0 sm:pe-3"
+          >
+            <ul class="flex flex-col">
+              <li
+                class="text-base pb-3 text-white font-inter font-normal leading-[150%]"
+              >
+                Contact Us
+              </li>
+              <li>
+                <a class="font-inter font-normal text-sm text-white" href="#"
+                  >Call :
+                  <span class="text-white font-poppins opacity-60">
+                    (316) 618 - 4557
+                  </span></a
+                >
+              </li>
+              <li class="pt-2">
+                <a class="font-inter font-normal text-sm text-white" href="#"
+                  >Text:<span class="text-white font-poppins opacity-60"
+                    >(316) 618 - 4557
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="xl:w-1/12 md:w-4/12 w-6/12 sm:pt-8 lg:pt-0 px-3 pt-8 pe-0 sm:pe-3 xl:pe-0 xl:ps-4"
+          >
+            <ul class="flex flex-col 2xl:ps-10">
+              <li
+                class="text-base whitespace-nowrap pb-3 text-white font-inter font-normal leading-[150%]"
+              >
+                Follow Us
+              </li>
+              <li class="flex gap-4">
+                <a href="#"
+                  ><svg
+                    class="social_icons transition-all duration-300"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_b_512_2363)">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="31"
+                        height="31"
+                        rx="15.5"
+                        stroke="#14A800"
+                      />
+                      <path
+                        d="M15.998 13.3322C14.529 13.3322 13.3302 14.531 13.3302 16C13.3302 17.469 14.529 18.6678 15.998 18.6678C17.467 18.6678 18.6658 17.469 18.6658 16C18.6658 14.531 17.467 13.3322 15.998 13.3322ZM23.9994 16C23.9994 14.8953 24.0094 13.8005 23.9474 12.6978C23.8853 11.4169 23.5931 10.2801 22.6565 9.3435C21.7179 8.40487 20.5831 8.11467 19.3022 8.05263C18.1975 7.99059 17.1027 8.0006 16 8.0006C14.8953 8.0006 13.8005 7.99059 12.6978 8.05263C11.4169 8.11467 10.2801 8.40687 9.3435 9.3435C8.40487 10.2821 8.11467 11.4169 8.05263 12.6978C7.99059 13.8025 8.0006 14.8973 8.0006 16C8.0006 17.1027 7.99059 18.1995 8.05263 19.3022C8.11467 20.5831 8.40687 21.7199 9.3435 22.6565C10.2821 23.5951 11.4169 23.8853 12.6978 23.9474C13.8025 24.0094 14.8973 23.9994 16 23.9994C17.1047 23.9994 18.1995 24.0094 19.3022 23.9474C20.5831 23.8853 21.7199 23.5931 22.6565 22.6565C23.5951 21.7179 23.8853 20.5831 23.9474 19.3022C24.0114 18.1995 23.9994 17.1047 23.9994 16ZM15.998 20.1048C13.7265 20.1048 11.8932 18.2715 11.8932 16C11.8932 13.7285 13.7265 11.8952 15.998 11.8952C18.2695 11.8952 20.1028 13.7285 20.1028 16C20.1028 18.2715 18.2695 20.1048 15.998 20.1048ZM20.2709 12.6858C19.7405 12.6858 19.3122 12.2575 19.3122 11.7271C19.3122 11.1968 19.7405 10.7685 20.2709 10.7685C20.8012 10.7685 21.2295 11.1968 21.2295 11.7271C21.2297 11.853 21.205 11.9778 21.1569 12.0942C21.1088 12.2105 21.0382 12.3163 20.9491 12.4053C20.8601 12.4944 20.7543 12.565 20.6379 12.6131C20.5216 12.6612 20.3968 12.6859 20.2709 12.6858Z"
+                        fill="#14A800"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_b_512_2363"
+                        x="-50"
+                        y="-50"
+                        width="132"
+                        height="132"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feGaussianBlur
+                          in="BackgroundImageFix"
+                          stdDeviation="25"
+                        />
+                        <feComposite
+                          in2="SourceAlpha"
+                          operator="in"
+                          result="effect1_backgroundBlur_512_2363"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_backgroundBlur_512_2363"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#"
+                  ><svg
+                    class="social_icons transition-all duration-300"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_b_512_2365)">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="31"
+                        height="31"
+                        rx="15.5"
+                        stroke="#14A800"
+                      />
+                      <path
+                        d="M24.0401 16.0201C24.0401 11.593 20.4471 8 16.0201 8C11.593 8 8 11.593 8 16.0201C8 19.9018 10.7589 23.1338 14.416 23.8797V18.4261H12.812V16.0201H14.416V14.015C14.416 12.4672 15.6752 11.208 17.2231 11.208H19.2281V13.614H17.6241C17.183 13.614 16.8221 13.9749 16.8221 14.416V16.0201H19.2281V18.4261H16.8221V24C20.8722 23.599 24.0401 20.1825 24.0401 16.0201Z"
+                        fill="#14A800"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_b_512_2365"
+                        x="-50"
+                        y="-50"
+                        width="132"
+                        height="132"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feGaussianBlur
+                          in="BackgroundImageFix"
+                          stdDeviation="25"
+                        />
+                        <feComposite
+                          in2="SourceAlpha"
+                          operator="in"
+                          result="effect1_backgroundBlur_512_2365"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_backgroundBlur_512_2365"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#"
+                  ><svg
+                    class="social_icons transition-all duration-300"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g filter="url(#filter0_b_512_2367)">
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="31"
+                        height="31"
+                        rx="15.5"
+                        stroke="#14A800"
+                      />
+                      <path
+                        d="M25.6894 9.88235C24.9647 10.2118 24.1835 10.4282 23.3741 10.5318C24.2024 10.0329 24.8424 9.24235 25.1435 8.29176C24.3624 8.76235 23.4965 9.09176 22.5835 9.28C21.84 8.47059 20.7953 8 19.6094 8C17.3976 8 15.5906 9.80706 15.5906 12.0376C15.5906 12.3576 15.6282 12.6682 15.6941 12.96C12.3435 12.7906 9.36 11.1812 7.37412 8.74353C7.02588 9.33647 6.82824 10.0329 6.82824 10.7671C6.82824 12.1694 7.53412 13.4118 8.62588 14.1176C7.95765 14.1176 7.33647 13.9294 6.79059 13.6471V13.6753C6.79059 15.6329 8.18353 17.2706 10.0282 17.6376C9.43598 17.7997 8.81421 17.8223 8.21177 17.7035C8.46739 18.5059 8.96803 19.2079 9.64331 19.711C10.3186 20.2141 11.1345 20.4929 11.9765 20.5082C10.5493 21.6381 8.78023 22.2488 6.96 22.24C6.64 22.24 6.32 22.2212 6 22.1835C7.78824 23.3318 9.91529 24 12.1929 24C19.6094 24 23.6847 17.8447 23.6847 12.5082C23.6847 12.3294 23.6847 12.16 23.6753 11.9812C24.4659 11.4165 25.1435 10.7012 25.6894 9.88235Z"
+                        fill="#14A800"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_b_512_2367"
+                        x="-50"
+                        y="-50"
+                        width="132"
+                        height="132"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feGaussianBlur
+                          in="BackgroundImageFix"
+                          stdDeviation="25"
+                        />
+                        <feComposite
+                          in2="SourceAlpha"
+                          operator="in"
+                          result="effect1_backgroundBlur_512_2367"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_backgroundBlur_512_2367"
+                          result="shape"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="mt-10 h-[1px] flex w-10/12 bg-white opacity-10"></span>
+        <p
+          class="font-inter fw-normal text-white text-center text-xs sm:text-sm opacity-60 mt-4 pb-5"
+        >
+          Copyright © 2024 Hire Coder, All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+    <!-- j quairy min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js file -->
+    <script src="./assets/js/style.js"></script>
+    <!-- tabslider header -->
+    <script>
+      $(".tabslider").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        speed: 2000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1085,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 2.05,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <!--logoslider header -->
+    <script>
+      $(".logoslider").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        Infinity:true,
+        speed: 2000,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        responsive: [
+       
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <!-- logos slider -->
+    <script>
+
+    </script>
+  </body>
+</html>
