@@ -11,22 +11,20 @@ function closenav() {
 // header-slider
 
 // experience codeers
-var card = document.getElementById("subjectcard");
-function showcards() {
-  var additionalContent = document.querySelector(".showmorecard");
-  if (additionalContent.style.display === "none") {
-    additionalContent.style.display = "block";
-  } else {
-    additionalContent.style.display = "none";
-  }
-}
+
 // header-tabs
 function headeropenTab(headertabName) {
+  var tabheading = document.getElementById("tabheading");
   var headertabContents = document.getElementsByClassName("headertab-content");
   for (var i = 0; i < headertabContents.length; i++) {
     headertabContents[i].style.display = "none";
   }
   document.getElementById(headertabName).style.display = "block";
+  if ((headertabContents.style.display = "block")) {
+    tabheading.style.color = "#14A800";
+  } else {
+    tabheading.style.color = "white";
+  }
 }
 // how it workks
 function openTab(tabName) {
@@ -35,8 +33,17 @@ function openTab(tabName) {
     tabContents[i].style.display = "none";
   }
   document.getElementById(tabName).style.display = "block";
-}
 
+  // Change color of active tab
+  var tabButtons = document.getElementsByClassName("tab-button");
+  for (var i = 0; i < tabButtons.length; i++) {
+    if (tabButtons[i].getAttribute("data-tab") === tabName) {
+      tabButtons[i].classList.add("active");
+    } else {
+      tabButtons[i].classList.remove("active");
+    }
+  }
+}
 // ---meet up----
 function openvideo(videoName) {
   // Hide all tab contents
@@ -53,4 +60,10 @@ function showImage(imageSrc) {
   var mainVideo = document.getElementById("mainVideo");
   mainVideo.src = imageSrc;
   mainVideo.style.display = "block";
+}
+// playvideo
+function playVideo() {
+  var video = document.getElementById("myVideo");
+  video.play();
+  document.getElementById("playbtn").style.opacity = 0;
 }

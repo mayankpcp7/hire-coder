@@ -28,6 +28,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- js -->
@@ -66,7 +68,7 @@
         <div class="max-w-[1140px] sm:px-4 mx-auto xl:px-0 z-0">
           <nav class="flex justify-between pt-[6px] relative z-1">
             <img
-              class="max-w-[82px]  cursor-pointer mx-4 sm:max-w-[125.71px]"
+              class="max-w-[82px]  cursor-pointer sm:max-w-[125.71px]"
               src="./assets/images/png/Hirecoder-Headerlogo 1.png"
               alt="navlogo"
             />
@@ -86,7 +88,7 @@
                 >
               </li>
               <button
-                class="w-[102px] font-semibold font-inter text-base h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
+                class="w-[102px] text-headingcolor font-semibold font-inter text-base h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
               >
                 Sign In
               </button>
@@ -101,7 +103,7 @@
               />
             </button>
             
-             <ul class="sm:hidden flex transition-all duration-300 justify-center mt-[-6px] flex-col w-full items-center bg-[#125c15] min-h-screen items-center z-[20] absolute end-[-100%]  mobilenav gap-6">
+             <ul class="sm:hidden min-h-screen flex transition-all duration-300 justify-center mt-[-6px] flex-col w-full items-center bg-[#125c15] sm:min-h-screen items-center z-[20] absolute end-[-100%]  mobilenav gap-6">
               <li class="relative">
                 <a onclick="closenav()"
                   class="text-white before:w-0 before:transition-all before:duration-300 before:ease-linear before:h-[3px] w-0 transition-all duration-300 hover:before:w-full before:absolute before:bottom-[-3%] before:bg-white text-md font-inter font-semibold"
@@ -117,11 +119,11 @@
                 >
               </li>
               <button onclick="closenav()"
-                class="w-[102px] font-inter font-semibold text-md h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
+                class="w-[102px] font-inter text-headingcolor font-semibold text-md h-[44px] hover:bg-[#082504] hover:text-white transition-all duration-300 rounded-[50px] bg-white"
               >
                 Sign In
               </button>
-              <button class="top-[2%] end-[2%] absolute sm:hidden" onclick="closenav()">
+              <button class="top-[3%] end-[2%] absolute sm:hidden" onclick="closenav()">
               <span class="bg-white flex h-[2px] w-[24px] mt-[2px] me-1 rotate-[-45deg]"></span>
               <span class="bg-white flex h-[2px] w-[24px] rotate-[45deg]"></span>
             </button>
@@ -175,7 +177,7 @@
             </div>
           <div class="max-w-[1180px] ms-4 sm:ms-0"> 
             <div
-              id="headertab1" class="flex headertab-content w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+              id="headertab1" class="flex headertab-content  w-[105%] items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
             >
               <div
                 class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
@@ -1882,23 +1884,37 @@
             </div>
           </div>
           </div>
-          <div id="logos" class="max-w-[1140px] mx-auto px-4 xl:px-0"> 
-        <div class="flex items-center logoslider justify-between">
-<img class="cursor-pointer mx-4 max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo">
-<img class="cursor-pointer mx-4 max-w-[107px] sm:max-w-[159px]" src="./assets/images/png/kenzan.png" alt="logo">
-<img class="cursor-pointer mx-4 sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/actualize.png" alt="logo">
-<img class="cursor-pointer mx-4 sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/demandforce.png" alt="logo">
-<img class="cursor-pointer mx-4 max-w-[94px]" src="./assets/images/png/paypal.png" alt="logo">
-<img class="cursor-pointer mx-4 max-w-[53px]" src="./assets/images/png/sales.png" alt="logo">
-<img class="cursor-pointer mx-4 max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo">
+          <div class="max-w-[1140px] mx-auto xl:px-0"> 
+            <div class="swiper-container3 xl:hidden"> 
+        <div class="flex items-center w-full justify-between swiper-wrapper">
+<div class="swiper-slide  max-w-[87px] sm:max-w-[170px]"><img class="cursor-pointer max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo"> </div>
+<div class="swiper-slide   max-w-[107px] sm:max-w-[159px]"><img class="cursor-pointer max-w-[107px] sm:max-w-[159px]" src="./assets/images/png/kenzan.png" alt="logo"> </div>
+<div class="swiper-slide   sm:max-w-[210px] max-w-[126px]"><img class="cursor-pointer sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/actualize.png" alt="logo"> </div>
+<div class="swiper-slide  sm:max-w-[210px] max-w-[126px]"><img class="cursor-pointer sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/demandforce.png" alt="logo"> </div>
+<div class="swiper-slide   max-w-[43px]"><img class="cursor-pointer max-w-[43px]" src="./assets/images/png/wex.png" alt="logo"> </div>
+<div class="swiper-slide  max-w-[94px]"><img class="cursor-pointer max-w-[94px]" src="./assets/images/png/paypal.png" alt="logo"> </div>
+<div class="swiper-slide  max-w-[53px]"><img class="cursor-pointer max-w-[53px]" src="./assets/images/png/sales.png" alt="logo"> </div>
+
+
+        </div></div>
+         <div> 
+        <div class="xl:flex hidden items-center w-full justify-between swiper-wrapper">
+<div class="swiper-slide  max-w-[87px] sm:max-w-[170px]"><img class="cursor-pointer max-w-[87px] sm:max-w-[170px]" src="./assets/images/png/virmedica.png" alt="logo"> </div>
+<div class="swiper-slide   max-w-[107px] sm:max-w-[159px]"><img class="cursor-pointer max-w-[107px] sm:max-w-[159px]" src="./assets/images/png/kenzan.png" alt="logo"> </div>
+<div class="swiper-slide   sm:max-w-[210px] max-w-[126px]"><img class="cursor-pointer sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/actualize.png" alt="logo"> </div>
+<div class="swiper-slide  sm:max-w-[210px] max-w-[126px]"><img class="cursor-pointer sm:max-w-[210px] max-w-[126px]" src="./assets/images/png/demandforce.png" alt="logo"> </div>
+<div class="swiper-slide   max-w-[43px]"><img class="cursor-pointer max-w-[43px]" src="./assets/images/png/wex.png" alt="logo"> </div>
+<div class="swiper-slide  max-w-[94px]"><img class="cursor-pointer max-w-[94px]" src="./assets/images/png/paypal.png" alt="logo"> </div>
+<div class="swiper-slide  max-w-[53px]"><img class="cursor-pointer max-w-[53px]" src="./assets/images/png/sales.png" alt="logo"> </div>
+
 
         </div>
         </div>
       </header>
   
       <!-- meetup -->
-       <section class="bg_meetup py-[70px] sm:py-[109px]  mt-[-50px]">
-        <div class="max-w-[1140px] mx-auto px-4 xl:px-0">
+       <section class="bg_meetup py-[70px] sm:pt-[109px] sm:pb-[83px]  mt-[-50px]">
+        <div class="max-w-[1176px] mx-auto pt-[70px] sm:pt-0 px-4 xl:px-0">
           <h2
             class="text-headingcolor mx-auto font-outfit max-w-[285px] leading-[116%] sm:max-w-[523px] font-semibold text-center text-[28px] md:text-[40px] xl:text-xl"
           >
@@ -1907,17 +1923,17 @@
           </h2>
           <div class="flex flex-wrap flex-row mt-12 pt-1 ">
 <div class="md:w-7/12 w-full">
-  <span class="relative"id="mainVideoContainer"> 
-    <img class="max-w-[50px] cursor-pointer z-10 absolute top-[45%] translate-x-[-50%] translate-y-[-50%] right-[45%]" src="./assets/images/png/playbtn.png" alt="playbtn">
-  <video id="mainVideo" width="659px" height="359px" poster="./assets/images/png/Video.png"  src="./assets/video/aboutvideo.mp4"></video></span>
+  <div class="relative"id="mainVideoContainer"> 
+    <button id="playbtn" onclick="playVideo()" class="cursor-pointer z-10 absolute top-[50%] translate-x-[-50%] translate-y-[-50%] start-[50%]"><img class="max-w-[32px] sm:max-w-[55px] cursor-pointer" src="./assets/images/png/playbtn.png" alt="playbtn"> </button>
+  <video onclick="pausevideo()" class="myvideo" id="myVideo"width="659px" height="359px" poster="./assets/images/png/Video.png"  src="./assets/video/aboutvideo.mp4"></video></div>
   <h4 class="font-inter font-semibold text-lg pt-4 leading-[130%]">Courtney Henry</h4>
   <p class="pt-1 font-inter text-headingblack">Java Developer</p>
   <img class="mt-2" src="./assets/images/svg/stars.svg" alt="stars">
   <p class="mt-4 font-inter text-black opacity-70 text-base leading-[160%] max-w-[659px]">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique. Proin feugiat aenean pulvinar eget nulla sagittis in. Nisi viverra fames quis consequat nullam”</p>
 </div>
-<div class="md:w-5/12 w-full md:ps-5">
-  <div class="swiper-container pt-10"> 
-  <div class="flex md:block swiper-wrapper">
+<div class="lg:w-5/12 w-full lg:px-5 xl:px-0">
+  <div class="swiper-container lg:hidden flex pt-10 lg:pt-0">
+  <div class="flex lg:block swiper-wrapper">
     <div class="swiper-slide min-w-[308px]"> 
 <div class="flex flex-col p-[10px] sm:py-3 sm:px-2 border border-solid rounded-[12px] bg-white">
   <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/elinarpooma.svg" alt="elina">
@@ -1962,12 +1978,246 @@
           </div>
         
         </div>
-      </section>
-      <div class="swiper-wrapper">
-<div class="swiper-slide">
-  <div>
-    <video width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
   </div>
+         <div class="lg:block hidden pt-10 md:pt-0">
+  <div class="flex lg:block swiper-wrapper">
+    <div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col p-[10px] sm:py-3 sm:px-2 border border-solid rounded-[12px] bg-white">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/elinarpooma.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Eleanor Pena</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">JavaScript Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div> </div>
+<div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col py-3 px-2 border border-solid rounded-[12px] bg-white mt-2">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/Devone.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Devon Lane</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">Java Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div>
+</div>
+<div class="swiper-slide min-w-[308px]"> 
+<div class="flex flex-col py-3 px-2 border border-solid rounded-[12px] bg-white mt-2">
+  <div class="flex"><img class="max-w-[50px] sm:max-w-[57px] md:max-w-[62px]" src="./assets/images/svg/Ralph.svg" alt="elina">
+    <div class="ps-2"> 
+  <h4 class="font-inter font-semibold font-semibold text-[18px]">Eleanor Pena</h4>
+<p class="pt-1 text-headingcolor text-sm sm:text-base font-inter font-normal opacity-60">JavaScript Developer</p></div>
+ </div>
+<div class="flex justify-between pt-1">
+  <img src="./assets/images/svg/stars.svg" alt="stars">
+  <p class="text-lightgreen font-inter sm:text-sm text-xs">Experience: 10 Years</p>
+</div>
+<p class="text-black opacity-70">“Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+</div>
+
+          </div>
+        
+        </div>
+         </div>
+</div>
+</div>
+ <div class="max-w-[1160px] flex relative mt-[50px] xl:px-0 px-4 mx-auto mb-[132px] md:mb-[150px] xl:mb-[192px] overflow-hidden"> 
+    <div class="swiper-button-prev"><svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.579834" width="34" height="34" rx="17" stroke="#14A800"/>
+<path d="M11.083 16.6632H21.3221L16.8488 12.1898C16.4913 11.8323 16.4913 11.2457 16.8488 10.8882C16.9336 10.8032 17.0343 10.7358 17.1452 10.6898C17.2561 10.6438 17.375 10.6201 17.495 10.6201C17.6151 10.6201 17.734 10.6438 17.8449 10.6898C17.9558 10.7358 18.0565 10.8032 18.1413 10.8882L24.1821 16.929C24.2671 17.0138 24.3345 17.1145 24.3805 17.2254C24.4265 17.3363 24.4502 17.4552 24.4502 17.5752C24.4502 17.6953 24.4265 17.8142 24.3805 17.9251C24.3345 18.036 24.2671 18.1367 24.1821 18.2215L18.1413 24.2623C18.0564 24.3472 17.9557 24.4145 17.8448 24.4604C17.7339 24.5064 17.6151 24.53 17.495 24.53C17.375 24.53 17.2562 24.5064 17.1453 24.4604C17.0344 24.4145 16.9337 24.3472 16.8488 24.2623C16.7639 24.1775 16.6966 24.0767 16.6507 23.9658C16.6047 23.8549 16.5811 23.7361 16.5811 23.6161C16.5811 23.4961 16.6047 23.3772 16.6507 23.2663C16.6966 23.1554 16.7639 23.0547 16.8488 22.9698L21.3221 18.4965H11.083C10.5788 18.4965 10.1663 18.084 10.1663 17.5798C10.1663 17.0757 10.5788 16.6632 11.083 16.6632Z" fill="#14A800"/>
+</svg>
+</div>
+      <div class="swiper-container2 relative flex items-center justify-center w-full"> 
+        <div class="swiper-button-next absolute start-[-10%]"><svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="35" height="35" rx="17.5" transform="matrix(-1 0 0 1 35 0.079834)" fill="#14A800"/>
+<path d="M23.9166 16.6632H13.6774L18.1507 12.1898C18.5082 11.8323 18.5082 11.2457 18.1507 10.8882C18.0659 10.8032 17.9652 10.7358 17.8543 10.6898C17.7434 10.6438 17.6245 10.6201 17.5045 10.6201C17.3844 10.6201 17.2655 10.6438 17.1547 10.6898C17.0438 10.7358 16.943 10.8032 16.8582 10.8882L10.8174 16.929C10.7324 17.0138 10.665 17.1145 10.619 17.2254C10.573 17.3363 10.5493 17.4552 10.5493 17.5752C10.5493 17.6953 10.573 17.8142 10.619 17.9251C10.665 18.036 10.7324 18.1367 10.8174 18.2215L16.8582 24.2623C16.9431 24.3472 17.0438 24.4145 17.1547 24.4604C17.2656 24.5064 17.3845 24.53 17.5045 24.53C17.6245 24.53 17.7433 24.5064 17.8542 24.4604C17.9651 24.4145 18.0659 24.3472 18.1507 24.2623C18.2356 24.1775 18.3029 24.0767 18.3488 23.9658C18.3948 23.8549 18.4184 23.7361 18.4184 23.6161C18.4184 23.4961 18.3948 23.3772 18.3488 23.2663C18.3029 23.1554 18.2356 23.0547 18.1507 22.9698L13.6774 18.4965H23.9166C24.4207 18.4965 24.8332 18.084 24.8332 17.5798C24.8332 17.0757 24.4207 16.6632 23.9166 16.6632Z" fill="white"/>
+</svg>
+</div>
+      <div class="swiper-wrapper">
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col justify-center items-center">
+  <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ralph Edwards</h4>
+    <p class="pt-2 font-inter opacity-60 text-center text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/codyfisher.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Cody Fisher</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/arlena.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Arlene McCoy</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center justify-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/enter.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Esther Howard</h4>
+    <p class="pt-2 font-inter opacity-60 text-center text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ronald.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ronald Richards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/dianne.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Dianne Russell</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+   <span class="relative"><video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ralph Edwards</h4>
+    <p class="pt-2 font-inter opacity-60 text-center text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/codyfisher.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Cody Fisher</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/arlena.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Arlene McCoy</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/enter.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Esther Howard</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ronald.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ronald Richards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/dianne.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Dianne Russell</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+   <span class="relative"><video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ralph Edwards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/codyfisher.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Cody Fisher</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/arlena.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Arlene McCoy</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/enter.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Esther Howard</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ronald.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ronald Richards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="swiper-slide max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/dianne.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Dianne Russell</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+</div>
+
+
+      </section>
+     
+     <!-- <div class="hidden justify-between xl:flex items-center"> 
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ralph Edwards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/codyfisher.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Cody Fisher</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/arlena.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Arlene McCoy</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/enter.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Esther Howard</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ronald.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Ronald Richards</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+<div class="max-w-[181px]">
+  <div class="flex flex-col items-center">
+    <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/dianne.png" src="./assets/video/aboutvideo.mp4"></video>
+    <h4 class="font-inter font-semibold text-headingcolor text-center pt-3 text-[18px]">Dianne Russell</h4>
+    <p class="pt-2 font-inter opacity-60 text-base">Java Developer</p>
+  </div>
+</div>
+</div> -->
+</div>
+</div>
 </div>
       <!-- Teams -->
       <section class="bg-[#F4F4F4] py-[53px] sm:py-[85px] relative">
@@ -1981,11 +2231,11 @@
           src="./assets/images/png/Vector 68.png"
           alt="lines vec"
         />
-        <div class="max-w-[1140px] mx-auto px-3 xl:px-0">
+        <div class="max-w-[1140px] mx-auto xl:px-0">
           <div class="flex flex-row flex-wrap">
-            <div class="lg:w-6/12">
+            <div class="lg:w-6/12 px-4 xl:px-0 xl:pt-[57px]">
               <h2
-                class="text-[28px] max-w-[250px] sm:text-[40px] lg:text-xl font-outfit font-semibold mx-auto text-center lg:mx-0 lg:text-start sm:max-w-[454px] leading-[116%] text-headingcolor"
+                class="text-[28px] max-w-[250px] sm:text-[40px]  lg:text-xl font-outfit font-semibold mx-auto text-center lg:mx-0 lg:text-start sm:max-w-[454px] leading-[116%] text-headingcolor"
               >
                 Build Amazing
                 <span class="text-lightgreen">Teams, On Demand </span>
@@ -1997,7 +2247,7 @@
                 enim sed commodo pellentesque.
               </p>
               <div
-                class="flex lg:hidden items-center sm:mt-10 justify-center relative z-1"
+                class="flex lg:hidden sm:scale-[0.9] items-center lg:mt-10 justify-center relative z-1"
               >
                 <div class="flex flex-col item-center">
                   <div
@@ -2111,14 +2361,14 @@
                 </div>
               </div>
               <div
-                class="flex flex-row justify-center flex-wrap mt-10 pt-1 sm:pt-5"
+                class="flex flex-row justify-center flex-wrap mt-10 pt-1  sm:pt-0 lg:pt-5"
               >
                 <div
                   class="sm:w-6/12 w-10/12 mt-0 sm:mt-8 lg:mt-0 px-2 xl:px-0"
                 >
                   <img
                     class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
-                    src="./assets/images/png/Logo.png"
+                    src="./assets/images/png/sameday.png"
                     alt="same day"
                   />
                   <h3
@@ -2150,7 +2400,7 @@
                   </p>
                 </div>
                 <div
-                  class="sm:w-6/12 w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10 pt-2"
+                  class="sm:w-6/12 lg:pt-10 xl:pt-[50px] w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10 pt-2"
                 >
                   <img
                     class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
@@ -2169,7 +2419,7 @@
                   </p>
                 </div>
                 <div
-                  class="sm:w-6/12 w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10 pt-2"
+                  class="sm:w-6/12 lg:pt-10 xl:pt-[50px] w-10/12 mt-8 lg:mt-0 px-2 xl:px-0 sm:mt-10"
                 >
                   <img
                     class="sm:max-w-[60px] max-w-[50px] mx-auto sm:mx-0"
@@ -2205,7 +2455,7 @@
                     <h3
                       class="text-md font-inter font-semibold leading-[120%] ps-4 pt-4"
                     >
-                      Annette Black
+                     Marvin McKinney
                     </h3>
                     <div class="flex items-center ps-4 pt-2">
                       <img
@@ -2241,7 +2491,7 @@
                     <h3
                       class="text-md font-inter font-semibold leading-[120%] ps-4 pt-4"
                     >
-                      Marvin McKinney
+                     Annette Black
                     </h3>
                     <div class="flex items-center ps-4 pt-2">
                       <img
@@ -2489,7 +2739,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2530,7 +2780,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard2"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2571,7 +2821,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard3"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2612,7 +2862,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard4"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2653,7 +2903,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard5"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2694,7 +2944,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard6"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2735,7 +2985,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard7"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2776,7 +3026,7 @@
               </a>
             </div>
             <div
-              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"
+              class="lg:w-3/12 md:w-4/12 sm:w-6/12 experiencecard w-10/12 px-4 md:mt-12 mt-7 hidden sm:block showmorecard"id="subjectcard8"
             >
               <div class="flex gap-3 items-center">
                 <img
@@ -2818,7 +3068,7 @@
             </div>
           </div>
           </div>
-          <button
+          <button id="showless"
             class="font-outfit mt-9 ms-4 font-semibold text-black text-base sm:hidden"
             onclick="showcards()"
           >
@@ -2837,8 +3087,8 @@
               >
                 How it <span class="text-lightgreen">Works</span>
               </h2>
-              <div class="relative z-[10]"> 
-                <img class="absolute start-[7%] lg:start-[5%] md:start-[3%] lg:start-[5%] z-[-1]" src="./assets/images/png/how-works-line.png" alt="line">
+              <div class="relative how_works z-[10]"> 
+               
               <button
                 class="tab-btn relative z-[10] flex text-start justify-start mt-6"
                 onclick="openTab('tab1')"
@@ -2849,7 +3099,7 @@
                   alt="video"
                 />
                 <div class="ps-5">
-                  <h4
+                  <h4  id="tabheading"
                     class="font-inter  font-semibold active:text-lightgreen text-md sm:text-lg"
                   >
                     Video interview the experts
@@ -2872,7 +3122,7 @@
                 />
                 <div class="ps-5">
                   <h4
-                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-[20px] text-md sm:text-lg"
+                    class="font-inter av= font-semibold active:text-lightgreen text-primaryblack text-[20px] text-md sm:text-lg"
                   >
                     Hire Expert coder
                   </h4>
@@ -2899,7 +3149,7 @@
                     Get quality work done
                   </h4>
                   <p
-                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
+                    class="text-headingcolor font-inter max-w-[281px] opacity-60"
                   >
                     Scrum & Project Delivery Managed by Us
                   </p>
@@ -2922,7 +3172,7 @@
                     Pay when you’re satisfied
                   </h4>
                   <p
-                    class="text-headingcolor font-inter max-w-[351px] opacity-60"
+                    class="text-headingcolor font-inter max-w-[374px] opacity-60"
                   >
                     Pay Only when task is done as Scrum Managed by Us.
                   </p>
@@ -2964,13 +3214,13 @@
         </div>
       </section>
       <!-- footer -->
-      <footer class="bg_footer px-4 pt-[51px] sm:pt-[83px] overflow-hidden">
+      <footer class="bg_footer  pt-[51px] sm:pt-[83px] overflow-hidden">
         <div
-          class="flex lg:gap-5 mx-[-12px] lg:mx-auto xl:gap-0 justify-between flex-row flex-wrap max-w-[1188px] mx-auto xl:px-4 xl:px-0"
+          class="flex px-4 lg:gap-5 mx-[-12px] lg:mx-auto xl:gap-0 justify-between flex-row flex-wrap max-w-[1188px] mx-auto xl:px-4 xl:px-0"
         >
-          <div class="lg:w-3/12 md:w-4/12 sm:w-8/12 w-10/12 px-3">
+          <div class="lg:w-3/12 md:w-4/12 sm:w-8/12 w-full px-3">
             <img
-              class="max-w-[149px] cursor-pointer mx-4"
+              class="max-w-[113px] cursor-pointer"
               src="./assets/images/png/Hirecoder-Headerlogo 1.png"
               alt="footer logo"
             />
@@ -2990,21 +3240,21 @@
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Portfolio</a
                 >
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Careers</a
                 >
               </li>
               <li>
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Contact Us</a
                 >
@@ -3020,21 +3270,21 @@
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Our Team</a
                 >
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >FAQs</a
                 >
               </li>
               <li>
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Testimonials</a
                 >
@@ -3052,14 +3302,14 @@
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Terms of Service</a
                 >
               </li>
               <li class="pb-2">
                 <a
-                  class="font-inter font-normal text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
+                  class="font-inter font-normal text-base sm:text-sm leading-[66%] text-white opacity-60 hover:opacity-100 transition-all duration-300"
                   href="#"
                   >Privacy Policy</a
                 >
@@ -3093,7 +3343,7 @@
               <li class="pt-2">
                 <a class="font-inter font-normal text-sm text-white" href="#"
                   >Text:<span class="text-white font-poppins opacity-60"
-                    >(316) 618 - 4557
+                    > (316) 618 - 4557
                   </span></a
                 >
               </li>
@@ -3108,10 +3358,10 @@
               >
                 Follow Us
               </li>
-              <li class="flex gap-4">
+              <li class="flex xl:gap-4 gap-3">
                 <a href="#"
                   ><svg
-                    class="social_icons transition-all duration-300"
+                    class="social_icons max-w-[24px] sm:max-w-[32px] h-[24px] sm:h-[32px] transition-all duration-300"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
@@ -3167,7 +3417,7 @@
                 </a>
                 <a href="#"
                   ><svg
-                    class="social_icons transition-all duration-300"
+                    class="social_icons max-w-[24px] sm:max-w-[32px] h-[24px] sm:h-[32px] transition-all duration-300"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
@@ -3223,7 +3473,7 @@
                 </a>
                 <a href="#"
                   ><svg
-                    class="social_icons transition-all duration-300"
+                    class="social_icons max-w-[24px] sm:max-w-[32px] h-[24px] sm:h-[32px] transition-all duration-300"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
@@ -3281,7 +3531,7 @@
             </ul>
           </div>
         </div>
-        <span class="mt-10 h-[1px] flex w-10/12 bg-white opacity-10"></span>
+        <span class="mt-10 h-[1px] flex w-full bg-white opacity-10"></span>
         <p
           class="font-inter fw-normal text-white text-center text-xs sm:text-sm opacity-60 mt-4 pb-5"
         >
@@ -3318,12 +3568,19 @@
           {
             breakpoint: 1085,
             settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 820,
+            settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
             },
           },
           {
-            breakpoint: 640,
+            breakpoint: 50,
             settings: {
               slidesToShow: 2.05,
               slidesToScroll: 1,
@@ -3332,36 +3589,81 @@
         ],
       });
     </script>
-    <!--logoslider header -->
-    <script>
-      $(".logoslider").slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        Infinity:true,
-        speed: 2000,
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        responsive: [
-       
-          {
-            breakpoint: 640,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      });
-    </script>
-    <!-- Include Swiper JS -->
+ <!-- Include Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.03,
+    spaceBetween: 10,
+    loop:true,
+    breakpoints: {
+      // when window width is >= 320px
+     
+     
+    },
+
+  });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container2', {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop:true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    breakpoints: {
+      640: {
+         slidesPerView: 1,
+         spaceBetween: 15,
+         loop:true,
+      },
+    },
+
+  });
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container3', {
     slidesPerView: 1,
     spaceBetween: 10,
-  
+    loop:true,
+    breakpoints: {
+      640: {
+         slidesPerView: 1,
+         spaceBetween: 10,
+         loop:true,
+      },
+    },
+
   });
+</script>
+<script>
+  var card = document.getElementById("subjectcard");
+  var card2 = document.getElementById("subjectcard2");
+  var card3 = document.getElementById("subjectcard3");
+  var card4 = document.getElementById("subjectcard4");
+  var card5 = document.getElementById("subjectcard5");
+  var card6 = document.getElementById("subjectcard6");
+  var card7 = document.getElementById("subjectcard7");
+  var card8 = document.getElementById("subjectcard8");
+  var less= document.getElementById("showless")
+function showcards() {
+  card.classList.toggle("hidden");
+  card2.classList.toggle("hidden");
+  card3.classList.toggle("hidden");
+  card4.classList.toggle("hidden");
+  card5.classList.toggle("hidden");
+  card6.classList.toggle("hidden");
+  card7.classList.toggle("hidden");
+  card8.classList.toggle("hidden");
+ if ( less.innerHTML=" Show More..") {
+   less.innerHTML="show Less.."
+ }
+else{
+  less.innerHTML="Show More.."
+}
+}
 </script>
   </body>
 </html>
