@@ -23,41 +23,29 @@ function showTab(tabIndex) {
   document.getElementById("tab" + (tabIndex + 1)).classList.remove("hidden");
 }
 // how it works
-document.getElementById('London').style.display = "block";
-document.querySelector('.tablinks.active').classList.remove('active');
-document.querySelector('.tablinks:first-child').classList.add('active');
+document.getElementById("London").style.display = "block";
+document.querySelector(".tablinks.active").classList.remove("active");
+document.querySelector(".tablinks:first-child").classList.add("active");
 
 function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-document.getElementById('London').style.display = "block";
-document.querySelector('.tablinks.active').classList.remove('active');
-document.querySelector('.tablinks:first-child').classList.add('active');
+document.getElementById("London").style.display = "block";
+document.querySelector(".tablinks.active").classList.remove("active");
+document.querySelector(".tablinks:first-child").classList.add("active");
 
 //show more btn
-var toggleBtn = document.getElementById("toggleBtn");
-var content = document.getElementById("content");
 
-toggleBtn.addEventListener("click", function () {
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        toggleBtn.textContent = "Show Less";
-    } else {
-        // If visible, hide the content
-        content.style.display = "none";
-        toggleBtn.textContent = "Show More...";
-    }
-});
 // ---meet up----
 function openvideo(videoName) {
   // Hide all tab contents
@@ -102,7 +90,7 @@ function showcards() {
   card7.classList.toggle("hidden");
   card8.classList.toggle("hidden");
   more.style.display = "none";
-   less.style.display = "flex";
+  less.style.display = "flex";
 }
 function hidecards() {
   card.classList.add("hidden");

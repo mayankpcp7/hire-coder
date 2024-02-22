@@ -23,7 +23,7 @@
 .social_icons path {
   transition: 300ms;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 .headercard {
@@ -88,3 +88,4 @@
 .block {
   display: block;
 }
+
