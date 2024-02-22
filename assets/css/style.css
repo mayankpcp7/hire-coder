@@ -23,8 +23,14 @@
 .social_icons path {
   transition: 300ms;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 .headercard {
   box-shadow: 0px 1px 37px 0px #00000026;
+}
+.slick-list {
+  width: 100% !important;
 }
 .slick-slide {
   margin-right: 6px !important;
@@ -50,43 +56,33 @@
 .slick-slide > div {
   display: flex;
 }
-
 .teamcard {
   box-shadow: 0px 9px 24px 5px #0000000d;
 }
-.experiencecard:hover .view {
+.viewbtn:hover .view {
   transform: translatex(45%);
 }
-.experiencecard:hover .viewcoder {
+.viewbtn:hover .viewcoder {
   color: #14a800;
 }
-.how_works::before {
-  content: url(../images/png/how-works-line.png);
-  position: absolute;
-  left: 5%;
-}
-.active-text-green {
+.tab button.active {
   color: #14a800;
 }
-@media (max-width: 1024px) {
-  .how_works::before {
-    left: 3%;
-  }
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: none;
 }
-@media (max-width: 640px) {
-  .how_works::before {
-    left: 5%;
-  }
+.swiper {
+  height: 100%;
+  width: 100%;
 }
 @media (max-width: 375px) {
   .bg_header {
     background-image: url(../images/webp/hedader-sm.webp);
+    background-size: cover;
   }
   .main {
     padding-top: 220px !important;
-  }
-  .how_works::before {
-    left: 7%;
   }
 }
 .block {

@@ -63,7 +63,7 @@
   <body>
     <div class="overflow-x-hidden">
       <header id="header"
-        class="bg_header bg-no-repeat sm:bg-center xxl:h-screen overflow-x-hidden min-h-screen bg-cover relative z-1"
+        class="bg_header bg-no-repeat sm:bg-center xl:bg-right xxl:h-screen overflow-x-hidden min-h-screen bg-cover relative z-1"
       >
         <div class="max-w-[1140px] sm:px-4 mx-auto xl:px-0 z-0">
           <nav class="flex justify-between pt-[6px] relative z-1">
@@ -143,44 +143,45 @@
           </main>
           <div class="pt-[100px] sm:pt-[106px] main">
             <div class="flex px-4  sm:px-0 flex-wrap gap-[10px] items-center">
-              <button  onclick="headeropenTab('headertab1')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] w-[121px] sm:h-[33px] sm:w-[135px]"
+              <button 
+                onclick="showTab(0)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] w-[121px] sm:h-[33px] sm:w-[135px]"
               >
                 Website Design
               </button>
-              <button  onclick="headeropenTab('headertab2')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[95px] sm:w-[106px]"
+              <button 
+                onclick="showTab(1)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[95px] sm:w-[106px]"
               >
                 Java Script
               </button>
-              <button onclick="headeropenTab('headertab3')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[90px] sm:w-[100px]"
+              <button
+                onclick="showTab(2)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[90px] sm:w-[100px]"
               >
                 UI Design
               </button>
-              <button onclick="headeropenTab('headertab4')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[67px] sm:w-[72px]"
+              <button
+                onclick="showTab(3)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[31px] sm:h-[33px] w-[67px] sm:w-[72px]"
               >
                 HTML
               </button>
-              <button onclick="headeropenTab('headertab5')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[88px] sm:w-[97px]"
+              <button
+                onclick="showTab(4)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[88px] sm:w-[97px]"
               >
                 Bootstrap
               </button>
-              <button onclick="headeropenTab('headertab6')"
-                class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[57px] sm:w-[61px]"
+              <button
+                onclick="showTab(5)" class="text-white font-inter flex justify-center rounded-[50px] focus:bg-white focus:text-lightgreen transition-all duration-300 items-center border border-1 border-solid border-white fw-normal text-sm leading-[121%] h-[33px] w-[57px] sm:w-[61px]"
               >
                 CSS
               </button>
             </div>
             </div>
-          <div class="max-w-[1180px] ms-4 sm:ms-0"> 
+            
+          <div class="max-w-[1180px] ms-4 sm:ms-0 overflow-x-scroll"> 
             <div
-              id="headertab1" class="flex headertab-content  w-[105%] items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+              id="tab1" class="flex headertab-content w-full items-center justify-between flex-nowrap gap-3 mt-3 py-4 me-[-20px] pb-[50px]"
             >
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -240,7 +241,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
@@ -295,7 +296,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -345,7 +346,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -400,7 +401,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -409,7 +410,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -460,11 +461,61 @@
                 </button>
               </div>
             </div>
-            <div id="headertab2"
-              class="flex w-full items-center headertab-content hidden justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            <div id="tab2"
+              class="flex w-full items-center headertab-content hidden justify-between flex-nowrap gap-3 mt-3  py-4 me-[-20px] pb-[50px]"
             >
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic3.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    Mahon Kokne
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    CSS 3
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -524,7 +575,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
@@ -578,58 +629,9 @@
                   Chat Now
                 </button>
               </div>
+            
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
-              >
-                <img
-                  class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
-                  src="./assets/images/png/tabpic3.png"
-                  alt="wadewarren"
-                />
-                <div class="flex pt-3 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
-                  >
-                    Mahon Kokne
-                  </p>
-                  <p
-                    class="text-black font-inter font-normal text-sm leading-[121%]"
-                  >
-                    $80/hr
-                  </p>
-                </div>
-                <div class="flex pt-1 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
-                  >
-                    HTML Developer
-                  </p>
-                  <div class="flex items-center">
-                    <img
-                      class="me-1 w-[14px] h-[14px]"
-                      src="./assets/images/png/Star 1.png"
-                      alt="star"
-                    />
-                    <p class="font-inter text-xs text-black opacity-60 pt-1">
-                      4.5
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center gap-[6px]">
-                  <a
-                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
-                  >
-                    CSS 3
-                  </a>
-                </div>
-                <button
-                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
-                >
-                  Chat Now
-                </button>
-              </div>
-              <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -684,7 +686,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -693,7 +695,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -745,11 +747,11 @@
               </div>
          
             </div>
-            <div id="headertab3"
-              class="flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            <div id="tab3"
+              class="flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3  py-4 me-[-20px] pb-[50px]"
             >
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -809,7 +811,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
@@ -864,7 +866,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -914,7 +916,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -969,7 +971,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -978,7 +980,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -1029,11 +1031,67 @@
                 </button>
               </div>
             </div>
-            <div  id="headertab4"
-              class="flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            <div  id="tab4"
+              class="pb-[50px] flex items-center headertab-content hidden w-full justify-between flex-nowrap gap-3 mt-3  py-4 me-[-20px]"
             >
+              
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1093,62 +1151,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
-              >
-                <img
-                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
-                  src="./assets/images/png/tabpic2.png"
-                  alt="wadewarren"
-                />
-                <div class="flex pt-3 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
-                  >
-                    John Broun
-                  </p>
-                  <p
-                    class="text-black font-inter font-normal text-sm leading-[121%]"
-                  >
-                    $80/hr
-                  </p>
-                </div>
-                <div class="flex pt-1 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
-                  >
-                    HTML Developer
-                  </p>
-                  <div class="flex items-center">
-                    <img
-                      class="me-1 w-[14px] h-[14px]"
-                      src="./assets/images/png/Star 1.png"
-                      alt="star"
-                    />
-                    <p class="font-inter text-xs text-black opacity-60 pt-1">
-                      4.5
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center gap-[6px]">
-                  <a
-                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
-                  >
-                    Figma
-                  </a>
-                  <a
-                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
-                  >
-                    XD
-                  </a>
-                </div>
-                <button
-                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
-                >
-                  Chat Now
-                </button>
-              </div>
-              <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1198,7 +1201,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1253,7 +1256,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1262,7 +1265,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -1314,11 +1317,67 @@
               </div>
            
             </div>
-            <div id="headertab5"
-              class="flex headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            <div id="tab5"
+              class="pb-[50px] flex headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3  py-4 me-[-20px]"
             >
+              
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+              >
+                <img
+                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
+                  src="./assets/images/png/tabpic2.png"
+                  alt="wadewarren"
+                />
+                <div class="flex pt-3 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                  >
+                    John Broun
+                  </p>
+                  <p
+                    class="text-black font-inter font-normal text-sm leading-[121%]"
+                  >
+                    $80/hr
+                  </p>
+                </div>
+                <div class="flex pt-1 items-center justify-between">
+                  <p
+                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
+                  >
+                    HTML Developer
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      class="me-1 w-[14px] h-[14px]"
+                      src="./assets/images/png/Star 1.png"
+                      alt="star"
+                    />
+                    <p class="font-inter text-xs text-black opacity-60 pt-1">
+                      4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
+                  >
+                    Figma
+                  </a>
+                  <a
+                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
+                  >
+                    XD
+                  </a>
+                </div>
+                <button
+                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
+                >
+                  Chat Now
+                </button>
+              </div>
+              <div
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1378,62 +1437,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
-              >
-                <img
-                  class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
-                  src="./assets/images/png/tabpic2.png"
-                  alt="wadewarren"
-                />
-                <div class="flex pt-3 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
-                  >
-                    John Broun
-                  </p>
-                  <p
-                    class="text-black font-inter font-normal text-sm leading-[121%]"
-                  >
-                    $80/hr
-                  </p>
-                </div>
-                <div class="flex pt-1 items-center justify-between">
-                  <p
-                    class="text-headingcolor text-xs opacity-60 font-medium leading-[121%]"
-                  >
-                    HTML Developer
-                  </p>
-                  <div class="flex items-center">
-                    <img
-                      class="me-1 w-[14px] h-[14px]"
-                      src="./assets/images/png/Star 1.png"
-                      alt="star"
-                    />
-                    <p class="font-inter text-xs text-black opacity-60 pt-1">
-                      4.5
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center gap-[6px]">
-                  <a
-                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[50px]"
-                  >
-                    Figma
-                  </a>
-                  <a
-                    class="font-inter text-center font-medium mt-[14px] sm:mt-[10.5px] text-[10px] text-black opacity-70 leading-[120%] sm:h-[20px] h-[16px] flex items-center justify-center sm:px-[6px] sm:py-1 py-[2px] border border-[#e5e5e5e] rounded-[50px] sm:w-[34px]"
-                  >
-                    XD
-                  </a>
-                </div>
-                <button
-                  class="bg-lightgreen text-white font-inter font-semibold rounded-[40px] hover:bg-[#082504] transition-all duration-300 sm:w-[107px] mt-4 sm:text-sm text-xs w-[97px] h-[30px] sm:h-[33px]"
-                >
-                  Chat Now
-                </button>
-              </div>
-              <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1483,7 +1487,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1538,7 +1542,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1547,7 +1551,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -1598,11 +1602,11 @@
                 </button>
               </div>
             </div>
-            <div id="headertab6"
-              class="flex headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3 tabslider py-4 me-[-20px]"
+            <div id="tab6"
+              class="flex pb-[50px] headertab-content hidden w-full items-center justify-between flex-nowrap gap-3 mt-3  py-4 me-[-20px]"
             >
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1662,7 +1666,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] xl:h-[125px] xl:max-w-[203.78px]"
@@ -1717,7 +1721,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1767,7 +1771,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1822,7 +1826,7 @@
                 </button>
               </div>
               <div
-                class="flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
+                class="lg:me-0 flex w-[165px] sm:w-[218px] flex-col p-2 bg-white rounded-[10px] headercard"
               >
                 <img
                   class="min-w-[151px] sm:h-[125pxl:max-w-[203.78px]"
@@ -1831,7 +1835,7 @@
                 />
                 <div class="flex pt-3 items-center justify-between">
                   <p
-                    class="text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
+                    class="whitespace-nowrap text-headingcolor text-xs sm:text-base font-medium leading-[121%] font-inter"
                   >
                     Courtney henry
                   </p>
@@ -1883,6 +1887,7 @@
               </div>
             </div>
           </div>
+          
           </div>
           <div class="max-w-[1140px] mx-auto xl:px-0"> 
             <div class="swiper-container3 xl:hidden"> 
@@ -1922,8 +1927,8 @@
             <span class="text-lightgreen">Chat and hire</span>
           </h2>
           <div class="flex flex-wrap flex-row mt-12 pt-1 ">
-<div class="md:w-7/12 w-full">
-  <div class="relative"id="mainVideoContainer"> 
+<div class="lg:w-7/12 w-full">
+  <div class="max-w-[659px] relative"id="mainVideoContainer"> 
     <button id="playbtn" onclick="playVideo()" class="cursor-pointer z-10 absolute top-[50%] translate-x-[-50%] translate-y-[-50%] start-[50%]"><img class="max-w-[32px] sm:max-w-[55px] cursor-pointer" src="./assets/images/png/playbtn.png" alt="playbtn"> </button>
   <video onclick="pausevideo()" class="myvideo" id="myVideo"width="659px" height="359px" poster="./assets/images/png/Video.png"  src="./assets/video/aboutvideo.mp4"></video></div>
   <h4 class="font-inter font-semibold text-lg pt-4 leading-[130%]">Courtney Henry</h4>
@@ -2028,19 +2033,9 @@
          </div>
 </div>
 </div>
- <div class="max-w-[1160px] flex relative mt-[50px] xl:px-0 px-4 mx-auto mb-[132px] md:mb-[150px] xl:mb-[192px] overflow-hidden"> 
-    <div class="swiper-button-prev"><svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.579834" width="34" height="34" rx="17" stroke="#14A800"/>
-<path d="M11.083 16.6632H21.3221L16.8488 12.1898C16.4913 11.8323 16.4913 11.2457 16.8488 10.8882C16.9336 10.8032 17.0343 10.7358 17.1452 10.6898C17.2561 10.6438 17.375 10.6201 17.495 10.6201C17.6151 10.6201 17.734 10.6438 17.8449 10.6898C17.9558 10.7358 18.0565 10.8032 18.1413 10.8882L24.1821 16.929C24.2671 17.0138 24.3345 17.1145 24.3805 17.2254C24.4265 17.3363 24.4502 17.4552 24.4502 17.5752C24.4502 17.6953 24.4265 17.8142 24.3805 17.9251C24.3345 18.036 24.2671 18.1367 24.1821 18.2215L18.1413 24.2623C18.0564 24.3472 17.9557 24.4145 17.8448 24.4604C17.7339 24.5064 17.6151 24.53 17.495 24.53C17.375 24.53 17.2562 24.5064 17.1453 24.4604C17.0344 24.4145 16.9337 24.3472 16.8488 24.2623C16.7639 24.1775 16.6966 24.0767 16.6507 23.9658C16.6047 23.8549 16.5811 23.7361 16.5811 23.6161C16.5811 23.4961 16.6047 23.3772 16.6507 23.2663C16.6966 23.1554 16.7639 23.0547 16.8488 22.9698L21.3221 18.4965H11.083C10.5788 18.4965 10.1663 18.084 10.1663 17.5798C10.1663 17.0757 10.5788 16.6632 11.083 16.6632Z" fill="#14A800"/>
-</svg>
-</div>
-      <div class="swiper-container2 relative flex items-center justify-center w-full"> 
-        <div class="swiper-button-next absolute start-[-10%]"><svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="35" height="35" rx="17.5" transform="matrix(-1 0 0 1 35 0.079834)" fill="#14A800"/>
-<path d="M23.9166 16.6632H13.6774L18.1507 12.1898C18.5082 11.8323 18.5082 11.2457 18.1507 10.8882C18.0659 10.8032 17.9652 10.7358 17.8543 10.6898C17.7434 10.6438 17.6245 10.6201 17.5045 10.6201C17.3844 10.6201 17.2655 10.6438 17.1547 10.6898C17.0438 10.7358 16.943 10.8032 16.8582 10.8882L10.8174 16.929C10.7324 17.0138 10.665 17.1145 10.619 17.2254C10.573 17.3363 10.5493 17.4552 10.5493 17.5752C10.5493 17.6953 10.573 17.8142 10.619 17.9251C10.665 18.036 10.7324 18.1367 10.8174 18.2215L16.8582 24.2623C16.9431 24.3472 17.0438 24.4145 17.1547 24.4604C17.2656 24.5064 17.3845 24.53 17.5045 24.53C17.6245 24.53 17.7433 24.5064 17.8542 24.4604C17.9651 24.4145 18.0659 24.3472 18.1507 24.2623C18.2356 24.1775 18.3029 24.0767 18.3488 23.9658C18.3948 23.8549 18.4184 23.7361 18.4184 23.6161C18.4184 23.4961 18.3948 23.3772 18.3488 23.2663C18.3029 23.1554 18.2356 23.0547 18.1507 22.9698L13.6774 18.4965H23.9166C24.4207 18.4965 24.8332 18.084 24.8332 17.5798C24.8332 17.0757 24.4207 16.6632 23.9166 16.6632Z" fill="white"/>
-</svg>
-</div>
-      <div class="swiper-wrapper">
+ <div class="max-w-[1160px] flex relative mt-[50px] xl:px-0 px-[5px] mx-auto mb-[132px] md:mb-[150px] xl:mb-[192px] overflow-hidden"> 
+ <div class="swiper-container2 relative flex items-center justify-center w-full"> 
+ <div class="swiper-wrapper">
 <div class="swiper-slide max-w-[181px]">
   <div class="flex flex-col justify-center items-center">
   <video class="cursor-pointer" id="video" width="182" poster="./assets/images/png/ralph.png" src="./assets/video/aboutvideo.mp4"></video>
@@ -2361,7 +2356,7 @@
                 </div>
               </div>
               <div
-                class="flex flex-row justify-center flex-wrap mt-10 pt-1  sm:pt-0 lg:pt-5"
+                class="flex flex-row justify-center flex-wrap lg:mt-10 pt-[45px]  sm:pt-0 lg:pt-5"
               >
                 <div
                   class="sm:w-6/12 w-10/12 mt-0 sm:mt-8 lg:mt-0 px-2 xl:px-0"
@@ -2601,7 +2596,7 @@
                 Python is a high-level, versatile programming language that has
                 gained immense popularity.
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2643,7 +2638,7 @@
                 Mobile technology has from the early days of basic cell phones
                 to the modern .
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2684,7 +2679,7 @@
                 User Interface (UI) design is a crucial aspect of creating
                 digital products that are
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2725,7 +2720,7 @@
                 Java is a widely used, versatile, and platform-independent
                 programming
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2766,7 +2761,7 @@
                 Python is a high-level, versatile programming language that has
                 gained immense popularity.
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2807,7 +2802,7 @@
                 Mobile technology has from the early days of basic cell phones
                 to the modern .
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2848,7 +2843,7 @@
                 User Interface (UI) design is a crucial aspect of creating
                 digital products that are
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2889,7 +2884,7 @@
                 Java is a widely used, versatile, and platform-independent
                 programming
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2930,7 +2925,7 @@
                 Python is a high-level, versatile programming language that has
                 gained immense popularity.
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -2971,7 +2966,7 @@
                 Mobile technology has from the early days of basic cell phones
                 to the modern .
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -3012,7 +3007,7 @@
                 User Interface (UI) design is a crucial aspect of creating
                 digital products that are
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -3053,7 +3048,7 @@
                 Java is a widely used, versatile, and platform-independent
                 programming
               </p>
-              <a href="" target="_blank" class="flex items-center pt-4">
+              <a class="flex cursor-pointer max-w-[120px] items-center pt-4 viewbtn">
                 <p
                   class="font-inter viewcoder transition-all duration-300 font-medium font-medium text-primaryblack"
                 >
@@ -3068,151 +3063,116 @@
             </div>
           </div>
           </div>
-          <button id="showless"
+          <button id="more"
             class="font-outfit mt-9 ms-4 font-semibold text-black text-base sm:hidden"
             onclick="showcards()"
           >
             Show More..
           </button>
+          <button id="less"
+            class="font-outfit sm:hidden mt-9 ms-4 font-semibold hidden text-black text-base sm:hidden"
+            onclick="hidecards()"
+          >
+            Show Less..
+          </button>
         </div>
       </section>
       <!-- How it Works -->
-      <section class="bg-[#F4F4F4] py-[64px] lg:py-[80px] xl:py-[97px]">
-        <div class="max-w-[1140px] px-4 xl:px-0 mx-auto">
-          <div class="flex justify-center flex-wrap flex-row">
-            <div class="w-full lg:w-6/12">
+      <section class=" bg-[#f3f3f3]">
+        <div class="max-w-[1164px] mx-auto px-3 py-[64px] sm:py-[70px] md:py-[80px] lg:py-[97px]">
+            <div class="flex justify-between flex-wrap">
+                <div class="lg:w-5/12 w-full">
+                    <h2
+                        class="font-outfit text-[28px] sm:text-[35px] md:text-[40px] lg:text-xl font-semibold leading-[118%] pb-6 sm:pb-10 md:pb-[57px] text-center sm:text-start">
+                        How it <span class="text-lightgreen">Works</span></h2>
 
-              <h2
-                class="font-outfit sm:text-start text-center font-semibold text-[28px] sm:text-[40px] lg:text-xl text-headingcolor sm:pb-4 lg:pb-8"
-              >
-                How it <span class="text-lightgreen">Works</span>
-              </h2>
-              <div class="relative how_works z-[10]"> 
-               
-              <button
-                class="tab-btn relative z-[10] flex text-start justify-start mt-6"
-                onclick="openTab('tab1')"
-              >
-                <img
-                  class="sm:max-w-[60px] relative z-[3] max-w-[50px]"
-                  src="./assets/images/png/video-interview.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4  id="tabheading"
-                    class="font-inter  font-semibold active:text-lightgreen text-md sm:text-lg"
-                  >
-                    Video interview the experts
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[361px] opacity-60"
-                  >
-                    Live video chat & Hire Top 1% Global coder in a click.
-                  </p>
+                    <div class="tab flex flex-col">
+                        <div class="relative z-10">
+                            <img class="sm:ps-7 h-full ps-6 mt-8 pb-14" src="./assets/images/webp/dotted_line.webp"
+                                alt="dotted_line">
+
+                            <div class="mb-6 absolute top-0 start-0 flex gap-[15px] sm:gap-[20px]">
+                                <img class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                                    src="./assets/images/png/video-interview.png" alt="interview_img.webp">
+                                <div class="flex flex-col gap-2.5">
+                                    <button
+                                        class="tablinks active transition-all duration-150 text-[20px] sm:text-[24px] font-inter font-semibold text-black1 flex items-start leading-[120%]"
+                                        onclick="openCity(event, 'London')">
+                                        Video interview the experts</button>
+                                    <p class="opacity-60 font-inter font-normal leading-[150%] max-w-[361px] text-dark">
+                                        Live video chat & Hire Top 1% Global coder in a click.</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 absolute start-0 top-[26.5%] flex gap-[15px] sm:gap-[20px]">
+                                <img class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                                    src="./assets/images/png/Logo.png" alt="hire.png">
+                                <div class="flex flex-col gap-2.5">
+                                    <button
+                                        class="tablinks transition-all duration-150 text-[20px] sm:text-[24px] font-inter text-black1 font-semibold flex items-start leading-[120%]"
+                                        onclick="openCity(event, 'Paris')">Hire Expert coder</button>
+                                    <p class="opacity-60 font-inter font-normal leading-[150%] max-w-[269px] text-dark">
+                                        Assign
+                                        Project & Tasks for your project.</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 absolute start-0 top-[53%] flex gap-[15px] sm:gap-[20px]">
+                                <img class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                                    src="./assets/images/png/qualioty.png" alt="work_done_img.webp">
+                                <div class="flex flex-col gap-2.5">
+                                    <button
+                                        class="tablinks transition-all duration-150 text-[20px] sm:text-[24px] font-inter font-semibold text-black1 flex items-start leading-[120%]"
+                                        onclick="openCity(event, 'Tokyo')">Get quality work
+                                        done</button>
+                                    <p class="opacity-60 font-inter font-normal leading-[150%] max-w-[282px] text-dark">
+                                        Scrum
+                                        &
+                                        Project Delivery Managed by Us</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute start-0 top-[79%] flex gap-[15px] sm:gap-[20px]">
+                                <img class="w-[50px] h-[50px] sm:h-[60px] sm:w-[60px]"
+                                    src="./assets/images/png/paywhen.png" alt="satisfied">
+                                <div class="flex flex-col gap-2.5">
+                                    <button
+                                        class="tablinks transition-all duration-150 text-[20px] sm:text-[24px] font-inter font-semibold text-black1 flex items-start leading-[120%]"
+                                        onclick="openCity(event, 'japan')">Pay when you’re
+                                        satisfied</button>
+                                    <p
+                                        class="opacity-60 font-inter font-normal leading-[150%] max-w-[272px] sm:max-w-[374px] text-dark">
+                                        Pay Only when task is done as Scrum Managed by Us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openTab('tab2')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/Logo.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    class="font-inter av= font-semibold active:text-lightgreen text-primaryblack text-[20px] text-md sm:text-lg"
-                  >
-                    Hire Expert coder
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[251px] opacity-60"
-                  >
-                    Assign Project & Tasks for your project.
-                  </p>
+
+                <div class="lg:w-6/12 w-full  mt-11 lg:mt-0">
+                    <div id="London" class="tabcontent">
+                        <img class="max-w-[343px] sm:max-w-[450px] lg:max-w-[576px] w-full"
+                            src="./assets/images/png/tab1.png" alt="video interview">
+                    </div>
+
+                    <div id="Paris" class="tabcontent hidden">
+                        <img class="max-w-[343px] sm:max-w-[450px] lg:max-w-[576px] w-full"
+                            src="./assets/images/png/tab2.png" alt="works_img_2">
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent hidden">
+                        <img class="max-w-[343px] sm:max-w-[450px] lg:max-w-[576px] w-full"
+                            src="./assets/images/png/tab3.png" alt="works_img_3">
+                    </div>
+                    <div id="japan" class="tabcontent hidden">
+                        <img class="max-w-[343px] sm:max-w-[450px] lg:max-w-[576px] w-full"
+                            src="./assets/images/png/tab4.png" alt="works_img_4">
+                    </div>
                 </div>
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openTab('tab3')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/qualioty.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    class="font-inter active:text-lightgreen font-semibold text-primaryblack text-md sm:text-lg"
-                  >
-                    Get quality work done
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[281px] opacity-60"
-                  >
-                    Scrum & Project Delivery Managed by Us
-                  </p>
-                </div>
-              </button>
-              <button
-                class="tab-btn text-start flex mt-6"
-                onclick="openTab('tab4')"
-              >
-                <img
-                  class="sm:max-w-[60px] max-w-[50px]"
-                  src="./assets/images/png/paywhen.png"
-                  alt="video"
-                />
-                <div class="ps-5">
-                  <h4
-                    id="textgreen"
-                    class="font-inter font-semibold active:text-lightgreen text-primaryblack text-md sm:text-lg"
-                  >
-                    Pay when you’re satisfied
-                  </h4>
-                  <p
-                    class="text-headingcolor font-inter max-w-[374px] opacity-60"
-                  >
-                    Pay Only when task is done as Scrum Managed by Us.
-                  </p>
-                </div>
-              </button>
-              </div>
             </div>
-            <div class="w-full mt-11 lg:mt-0 lg:w-6/12">
-              <div id="tab1" class="tab-content">
-                <img
-                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
-                  src="./assets/images/webp/howworks.webp"
-                  alt="howworks"
-                />
-              </div>
-              <div id="tab2" class="tab-content hidden">
-                <img
-                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
-                  src="./assets/images/png/tab2.png"
-                  alt="howworks"
-                />
-              </div>
-              <div id="tab3" class="tab-content hidden">
-                <img
-                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
-                  src="./assets/images/png/tab3.png"
-                  alt="howworks"
-                />
-              </div>
-              <div id="tab4" class="tab-content hidden">
-                <img
-                  class="max-w-[343px] sm:max-w-[400px] lg:max-w-[476px] xl:max-w-[576px]"
-                  src="./assets/images/png/tab4.png"
-                  alt="howworks"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
       <!-- footer -->
       <footer class="bg_footer  pt-[51px] sm:pt-[83px] overflow-hidden">
         <div
@@ -3335,14 +3295,14 @@
               <li>
                 <a class="font-inter font-normal text-sm text-white" href="#"
                   >Call :
-                  <span class="text-white font-poppins opacity-60">
+                  <span class="text-white font-poppins hover:opacity-100 transition-all duration-300 opacity-60">
                     (316) 618 - 4557
                   </span></a
                 >
               </li>
               <li class="pt-2">
                 <a class="font-inter font-normal text-sm text-white" href="#"
-                  >Text:<span class="text-white font-poppins opacity-60"
+                  >Text:<span class="text-white font-poppins hover:opacity-100 duration-300 opacity-60"
                     > (316) 618 - 4557
                   </span></a
                 >
@@ -3527,7 +3487,7 @@
                     </defs>
                   </svg>
                 </a>
-              </li>
+              </li> 
             </ul>
           </div>
         </div>
@@ -3555,7 +3515,7 @@
     ></script>
     <!-- js file -->
     <script src="./assets/js/style.js"></script>
-    <!-- tabslider header -->
+    <!--  header -->
     <script>
       $(".tabslider").slick({
         dots: false,
@@ -3580,7 +3540,7 @@
             },
           },
           {
-            breakpoint: 50,
+            breakpoint: 580,
             settings: {
               slidesToShow: 2.05,
               slidesToScroll: 1,
@@ -3598,8 +3558,11 @@
     loop:true,
     breakpoints: {
       // when window width is >= 320px
-     
-     
+        614: {
+         slidesPerView: 2,
+         spaceBetween: 10,
+         loop:true,
+      },
     },
 
   });
@@ -3609,13 +3572,16 @@
     slidesPerView: 2,
     spaceBetween: 10,
     loop:true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+     
     breakpoints: {
-      640: {
-         slidesPerView: 1,
+      500: {
+         slidesPerView: 3,
+         spaceBetween: 15,
+         loop:true,
+      },
+     
+      1028: {
+         slidesPerView: 6,
          spaceBetween: 15,
          loop:true,
       },
@@ -3625,12 +3591,12 @@
 </script>
 <script>
   var swiper = new Swiper('.swiper-container3', {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 12,
     loop:true,
     breakpoints: {
       640: {
-         slidesPerView: 1,
+         slidesPerView: 3,
          spaceBetween: 10,
          loop:true,
       },
@@ -3639,31 +3605,8 @@
   });
 </script>
 <script>
-  var card = document.getElementById("subjectcard");
-  var card2 = document.getElementById("subjectcard2");
-  var card3 = document.getElementById("subjectcard3");
-  var card4 = document.getElementById("subjectcard4");
-  var card5 = document.getElementById("subjectcard5");
-  var card6 = document.getElementById("subjectcard6");
-  var card7 = document.getElementById("subjectcard7");
-  var card8 = document.getElementById("subjectcard8");
-  var less= document.getElementById("showless")
-function showcards() {
-  card.classList.toggle("hidden");
-  card2.classList.toggle("hidden");
-  card3.classList.toggle("hidden");
-  card4.classList.toggle("hidden");
-  card5.classList.toggle("hidden");
-  card6.classList.toggle("hidden");
-  card7.classList.toggle("hidden");
-  card8.classList.toggle("hidden");
- if ( less.innerHTML=" Show More..") {
-   less.innerHTML="show Less.."
- }
-else{
-  less.innerHTML="Show More.."
-}
-}
+ 
+
 </script>
   </body>
 </html>
