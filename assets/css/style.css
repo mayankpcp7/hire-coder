@@ -76,6 +76,7 @@
   height: 100%;
   width: 100%;
 }
+
 @media (max-width: 375px) {
   .bg_header {
     background-image: url(../images/webp/hedader-sm.webp);
@@ -88,4 +89,84 @@
 .block {
   display: block;
 }
+@media (max-width: 1440.98px) {
+  .bg_meetup {
+    background: url(../images/png/section.png);
+    background-repeat: no-repeat;
+  }
+}
 
+.slider {
+    width: calc(228px 10);
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-228px * 5));
+    }
+}
+
+.slider:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media (max-width:576px) {
+    .slider {
+        width: calc(139px * 10);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-139px * 5));
+        }
+    }
+}
+.slider {
+    width: calc(228px 10);
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-228px * 5));
+    }
+}
+
+.slider:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media (max-width:576px) {
+    .slider {
+        width: calc(139px * 10);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-139px * 5));
+        }
+    }
+}
